@@ -1,45 +1,45 @@
 const puppeteer = require('puppeteer');
 var fs = require("fs");
 
-function parseRow(row) {
-    var date = row.childNodes[0].innerText
-    var money = row.childNodes[1].innerText
-    var symbols = row.childNodes[1].innerText
-    var donationBody = row.childNodes[3].innerText.split("\n")
-    return {
-        "datum": date, 
-        "transferAmount": money, 
-        "transferSymbols": symbols, 
-        "person": donationBody[0],
-        "transferType": donationBody[1], 
-        "transferMessage": donationBody[2]
-    }
-}
+var args = process.argv.slice(2);
+
+// 4070217 - general transparent account
+// 4090453 - PSP elections
 
 (async () => {
+  function delay(time) {
+   return new Promise(function(resolve) { 
+       setTimeout(resolve, time)
+   });
+  }
+  
   const browser = await puppeteer.launch({headless: true});
   const page = await browser.newPage();
-  await page.goto('https://www.kb.cz/cs/transparentni-ucty/4070217', 
+  await page.goto('https://www.kb.cz/cs/transparentni-ucty/' + args[0], 
                     {waitUntil: 'networkidle2'});
 
-  var buttonNext = await page.evaluate(() => {
-      document.getElementsByClassName("btn-outline-secondary")[0]
-  })
-
-  var donations = await page.evaluate(() => {
-    rows = document.getElementsByTagName("tr")
-    rowsArray = Array.from(rows)
-    return rowsArray.map(x => parseRow(x))
-  });
-
-/*
-  fs.appendFile('output/champions.csv', huntersTable, function(err) {
+  var buttonStatus = false;
+  var i = 0;
+  while (!buttonStatus) {
+    await page.click('.btn-outline-secondary');
+    await delay(4000);
+    buttonStatus = await page.$eval('.btn-outline-secondary', x => x.disabled);
+    // console.log(buttonStatus)
+    i = i + 1;
+    console.log(i);
+  };
+  
+  const tbody = await page.$('tbody');
+  const rows = await page.evaluate(body => Array.from(body.getElementsByTagName("tr")).map(x => x.innerText.replaceAll("\n", ";").replaceAll("\t", ";")).join("\n"), tbody);
+  
+  // console.log(rows);
+    
+  await fs.appendFile('output/ano-transfers-' + args[0] + '.csv', rows, function(err) {
     if (err) {
        return console.error(err);
     }
     console.log("Data written successfully!");
  });
  
- */
   await browser.close();
 })();
