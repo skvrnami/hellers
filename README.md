@@ -11,6 +11,10 @@ If there is a .csv file with scraped data, the script appends new transfers to t
 
 `node src/scraper-ano.js [account_number]`  
 
+or 
+
+`node src/scraper-ano-daily.js [account_number]`
+
 e.g.
 
 `node src/scraper-ano.js 4070217`
