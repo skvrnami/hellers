@@ -7,7 +7,7 @@ var fs = require("fs");
 
 var args = process.argv.slice(2);
 var date = new Date(); 
-var dateString = date.toISOString().replaceAll(":", "-").substring(0,19);
+var dateString = date.toISOString().replace(':', '-').substr(0,16);
 const path = 'output/ano-transfers-' + args[0] + "-" + dateString + '.csv';
 
 (async () => {
