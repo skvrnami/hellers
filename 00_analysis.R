@@ -3,21 +3,10 @@ library(ggplot2)
 
 source("src/funs.R")
 
-ano_general_account <- read.csv("output/ano-transfers-4070217.csv", 
-                                header = FALSE, 
-                                sep = ";", 
-                                quote = "")
+ano_general_account <- readRDS("output/final_data.RData")
 
-heller_transactions <- ano_general_account %>%
-    rename(date = V1, 
-           amount = V2, 
-           symbols = V3, 
-           person = V4, 
-           type = V5, 
-           message = V6) %>% 
-    filter(type == "Příchozí platba") %>%
-    mutate(amount = convert_amount_to_numeric(amount), 
-           date = as.Date(date, format = "%d. %m. %Y")) %>%
+heller_transactions <- ano_general_account %>% 
+    filter(type == "Příchozí platba") %>% 
     filter(amount > 0 & amount < 10) %>% 
     count(date)
 

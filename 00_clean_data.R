@@ -30,7 +30,20 @@ total_file_select_days <- total_file %>%
 total_file_df <- total_file %>%
     left_join(., total_file_select_days, by = c("date", "group")) %>%
     filter(to_select) %>% 
-    select(V1:V6, path) 
+    select(V1:V6, path) %>%
+    mutate(V6 = ifelse(V4 %in% c("Odchozí platba", "Vklad", 
+                                 "Odchozí zahraniční platba", "Ostatní služby", 
+                                 "Poplatek"), 
+                       V5, V6), 
+           V5 = ifelse(V4 %in% c("Odchozí platba", "Vklad", 
+                                 "Odchozí zahraniční platba", "Ostatní služby", 
+                                 "Poplatek"), 
+                       V4, V5), 
+           V4 = ifelse(V4 %in% c("Odchozí platba", "Vklad", 
+                                 "Odchozí zahraniční platba", "Ostatní služby", 
+                                 "Poplatek"), 
+                       "", V4) 
+           )
     
 daily_df <- purrr::map_df(daily_files_fixed, read_transfers) %>%
     bind_rows(., total_file_df)
@@ -62,6 +75,8 @@ final_data <- daily_df %>%
            spec_symbol = purrr::map_dbl(symbols, ~as.numeric(.[3])), ) %>% 
     select(date, amount, var_symbol, const_symbol, spec_symbol, 
            name = V4, type = V5, message = V6)
+
+system("rm output/*-fixed.csv")
 
 saveRDS(final_data, "output/final_data.RData")
 write.csv(final_data, "output/final_data.csv", row.names = FALSE)
