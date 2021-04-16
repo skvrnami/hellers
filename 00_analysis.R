@@ -1,17 +1,12 @@
 library(dplyr)
 library(ggplot2)
 
+source("src/funs.R")
+
 ano_general_account <- read.csv("output/ano-transfers-4070217.csv", 
                                 header = FALSE, 
                                 sep = ";", 
                                 quote = "")
-
-convert_amount_to_numeric <- function(x){
-    gsub("\\s", "", x) %>%
-        gsub("CZK", "", .) %>%
-        gsub(",", ".", .) %>%
-        as.numeric()
-}
 
 heller_transactions <- ano_general_account %>%
     rename(date = V1, 
