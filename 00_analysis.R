@@ -10,8 +10,10 @@ heller_transactions <- ano_general_account %>%
     filter(amount > 0 & amount < 10) %>% 
     count(date)
 
-ggplot(heller_transactions, aes(x = date, y = n)) + 
+ggplot(heller_transactions %>%
+           filter(date >= "2021-01-01"), aes(x = date, y = n)) + 
     geom_line() + 
     geom_point() + 
-    scale_y_sqrt() + 
     theme_minimal()
+
+ggsave("output/chart.png")
