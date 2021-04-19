@@ -16,4 +16,4 @@ ggplot(heller_transactions %>%
     geom_point() + 
     theme_minimal()
 
-ggsave("output/chart.png")
+ggsave("output/hellers_chart.png")
