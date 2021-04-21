@@ -3,9 +3,10 @@ library(ggplot2)
 
 source("src/funs.R")
 
-ano_general_account <- readRDS("output/incoming_payments.RData")
+ano_general_account <- readRDS("output/final_data.RData")
 
 heller_transactions <- ano_general_account %>% 
+    filter(type == "Příchozí platba") %>% 
     filter(amount > 0 & amount < 10) %>% 
     count(date)
 
