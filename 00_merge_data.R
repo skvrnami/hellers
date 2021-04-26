@@ -78,5 +78,36 @@ final_data <- daily_df %>%
 
 system("rm output/*-fixed.csv")
 
-saveRDS(final_data, "output/final_data.RData")
-write.csv(final_data, "output/final_data.csv", row.names = FALSE)
+hlidac_transactions <- readRDS("output/ano_hlidac_transactions.RData") %>%
+    mutate(Zprava = ifelse(is.na(Zprava), ZpravaProPrijemce, Zprava), 
+           date = as.Date(Datum, format = "%Y-%m-%dT%H:%M:%S")) %>%
+    select(-c(ZpravaProPrijemce, DbCreated, DbCreatedBy, AddId, ZdrojUrl)) %>%
+    rename(var_symbol = VS, 
+           const_symbol = KS, 
+           spec_symbol = SS, 
+           amount = Castka, 
+           message = Zprava, 
+           name = NazevProtiuctu, 
+           type = PopisTransakce) %>%
+    mutate(var_symbol = ifelse(var_symbol %in% c("–", ""), 0, as.numeric(var_symbol)), 
+           const_symbol = ifelse(const_symbol %in% c("–", ""), 0, as.numeric(const_symbol)), 
+           spec_symbol = ifelse(spec_symbol %in% c("–", ""), 0, as.numeric(spec_symbol)), 
+           type = ifelse(amount < 0, "Odchozí platba", "Příchozí platba")) %>%
+    select(date, amount, var_symbol, const_symbol, spec_symbol, 
+           name, type, message)
+
+kb_min_date <- min(final_data$date)
+
+hlidac_transactions %>%
+    filter(date == kb_min_date)
+
+final_data %>%
+    filter(date == kb_min_date)
+
+final_data_with_hlidac <- bind_rows(
+    hlidac_transactions %>% filter(date <= kb_min_date), 
+    final_data %>% filter(date > kb_min_date)
+)
+
+saveRDS(final_data_with_hlidac, "output/final_data.RData")
+write.csv(final_data_with_hlidac, "output/final_data.csv", row.names = FALSE)
