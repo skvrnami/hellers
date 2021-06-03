@@ -31,7 +31,12 @@ const path = 'output/ano-transfers-' + args[0] + "-" + dateString + '.csv';
   while (!shouldStop) {
     await page.click('.btn-outline-secondary');
     await delay(4000);
-    buttonStatus = await page.$eval('.btn-outline-secondary', x => x.disabled);
+    try {
+      buttonStatus = await page.$eval('.btn-outline-secondary', x => x.disabled)  
+    } catch (err) {
+      buttonStatus = true 
+    };
+    
     tableBody = await page.$('tbody');
     tableRows = await page.evaluate(body => Array.from(body.getElementsByTagName("tr")).map(x => x.innerText.replaceAll(';', ':').replaceAll('\t', ';').replaceAll('\n', ';')), tableBody);
     shouldStop = buttonStatus
