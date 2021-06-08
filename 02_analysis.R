@@ -15,6 +15,9 @@ heller_donors <- ano_donations %>%
               first_amount = head(amount, 1),
               first_message = head(message, 1))
 
+write.csv(heller_donors, file = "output/heller_donors.csv", 
+          row.names = FALSE)
+
 heller_transactions <- ano_donations %>% 
     filter(type == "Příchozí platba") %>% 
     filter(amount > 0 & amount < 10) %>% 
