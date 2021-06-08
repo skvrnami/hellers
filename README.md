@@ -18,3 +18,14 @@ or
 e.g.
 
 `node src/scraper-ano.js 4070217`
+
+### Analyse the data
+
+`Rscript 00_merge_data.R [account_number]`
+`Rscript 01_clean_names.R`
+`Rscript 02_analysis.R`
+
+## Heller donations
+![](output/hellers_chart.png)
+
+![](output/heller_donors.png)

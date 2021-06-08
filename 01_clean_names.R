@@ -5,8 +5,12 @@ library(dplyr)
 # 1) no part of the name is in the names list by Ministry of Interior
 # 2) ask ARES whether the entity is company
 
-final_data <- readRDS("output/final_data.RData") %>%
-    mutate(is_company = case_when(
+final_files_df <- list.files("output", "final_data_[0-9]+.RData", full.names = TRUE) %>%
+    purrr::map_df(., function(x) readRDS(x) %>%
+                  mutate(account_number = stringr::str_extract(x, "[0-9]+")))
+
+final_data <- final_files_df %>%
+        mutate(is_company = case_when(
         grepl("a\\.s\\.", name, ignore.case = TRUE) ~ TRUE, 
         grepl("a\\.s", name, ignore.case = TRUE) ~ TRUE, 
         grepl("s\\.r\\.o", name, ignore.case = TRUE) ~ TRUE,
@@ -101,6 +105,7 @@ final_data <- readRDS("output/final_data.RData") %>%
                     "IPPS - TRANSPARENTNÍ",
                     "MENCL ELEKTRO ENGINE",
                     "VAŠE ZUBNÍ CENTRUM s",
+                    "BEACHKLUB C.BUDEJOV.",
                     "PSKON", "MF") ~ TRUE, 
         TRUE ~ FALSE
     ))
