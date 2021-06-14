@@ -3,7 +3,6 @@ library(dplyr)
 source("src/funs.R")
 
 args <- commandArgs(trailingOnly = TRUE)
-args <- "4090453"
 
 if(length(args) == 0){
     stop("At least one argument must be supplied.", call. = FALSE)
