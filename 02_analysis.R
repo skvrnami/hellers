@@ -13,7 +13,10 @@ heller_donors <- ano_donations %>%
     arrange(date) %>%
     summarise(first_donation = head(date, 1),
               first_amount = head(amount, 1),
-              first_message = head(message, 1))
+              first_message = head(message, 1), 
+              min_date = min(date, na.rm = TRUE), 
+              max_date = max(date, na.rm = TRUE),
+              n_heller_donations = n())
 
 write.csv(heller_donors, file = "output/heller_donors.csv", 
           row.names = FALSE)
