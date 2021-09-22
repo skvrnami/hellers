@@ -23,8 +23,8 @@ e.g.
 
 `Rscript 00_merge_data.R [account_number]`  
 
-`Rscript 00_merge_data.R 4070217`
-`Rscript 00_merge_data.R 4090453`
+`Rscript 00_merge_data.R 4070217`  
+`Rscript 00_merge_data.R 4090453`  
 `Rscript 01_clean_names.R`  
 `Rscript 02_analysis.R`  
 
