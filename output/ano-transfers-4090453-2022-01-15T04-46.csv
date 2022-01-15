@@ -1,0 +1,19 @@
+Oid;Technická cookie;1 rok;;;Podle cookie zjistíme, kdo se k nám naposledy přihlásil z daného zařízení a umíme díky tomu přizpůsobit obsah našeho webu.
+LastPageNodeID;Analytická cookie;po dobu návštěvy;;;Cookie sleduje, kterou stránku uživatelé navštívili, než přišli na aktuální stránku.
+LastPageDocumentID;Analytická cookie;po dobu návštěvy;Cookie sleduje, kterou stránku uživatelé navštívili, než přišli na aktuální stránku.
+CurrentContact;Preferenční cookie;50 let;Cookie ukládá UUID kontaktu souvisejícího s aktuálním návštěvníkem webu. Slouží ke sledování aktivit na webu.
+TS#;Technická cookie;po dobu návštěvy;Základní technická cookie pro zajištění bezpečnosti a rychlosti webu.
+BIGipServer#;Technická cookie;po dobu návštěvy;Cookie slouží k distribuci provozu na různé servery a zlepšuje rychlost načítání stránek.
+_pk_hsr a _wa_hsr;Analytická cookie;30 minut;Pomocné analytické cookies potřebné ke správnému fungování Matomo pluginu heatmapy a scrollmapy (nástroje sloužící pro anonymní zachytávání pohybu po stránce).
+_pk_ref a _wa_ref;Analytická cookie;6 měsíců ;Pomocné analytické cookies nástroje Matomo potřebné k vyhodnocování kampaňových statistik.
+_pk_cvar a _wa_cvar;Analytická cookie;30 minut;Pomocné analytické cookies nástroje Matomo, která obsahuje ID prohlížeče. Slouží ke sběru doplňujících informací o dané stránce, např. název zobrazeného produktu, sekce webu atp.
+_pk_ses a _wa_ses;Analytická cookie;30 minut;Pomocné analytické cookies nástroje Matomo obsahující ID prohlížeče. Pomáhají určovat hodnotu v cookies _pk_id a _wa_id.
+_pk_id a _wa_id;Analytická cookie;13 měsíců 
+_wa_vid a _vid ;Analytická cookie;5 let;Cookies analytického nástroje Matomo. Tyto cookies jsou nezbytné pro správné fungování analytického nástroje, který poskytuje informace o návštěvnosti webu. V cookies je uložené ID prohlížeče, tzv. Device ID. 
+.ASPXFORMSAUTH;Technická cookie;1 rok;Základní technická cookie Microsoft ASP.NET web framework (tvorba webových aplikací a služeb) uchovávající uživatelská nastavení (např. zvolený jazyk).
+CMSLandingPageLoaded;Technická cookie;20 minut;Technická cookie systému pro správu obsahu (Kentico) uchovávající informace o zobrazení vstupní stránky.
+CMSUserPage;Technická cookie;20 minut;Technická cookie systému pro správu obsahu (Kentico) uchovávající informace o předchozí zobrazené stránce.
+CMSCookieLevel;Technická cookie;1 rok;Základní technická cookie systému pro správu obsahu (Kentico) řídící povolení pro ostatní systémové cookies tohoto systému.
+CMSPreferredCulture;Technická cookie;1 rok;Základní technická cookie systému pro správu obsahu (Kentico) uchovávající uživatelská nastavení (např. zvolený jazyk).
+CMSCsrfCookie;Technická cookie;Po dobu návštěvy;Základní technická cookie systému pro správu obsahu stránek (Kentico) uchovávající bezpečnostní token.
+ASP.NET_SessionId;Technická cookie;Po dobu návštěvy;Základní technická cookie pro funkci Microsoft ASP.NET web framework (slouží pro tvorbu webových aplikací a služeb).
