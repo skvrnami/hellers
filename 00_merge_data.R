@@ -13,7 +13,7 @@ if(length(args) == 0){
 }
 # 4070217
 # 4090453
-ANO_ACCOUNT <- args[1]
+ANO_ACCOUNT <- "4090453" # args[1]
 
 daily_files <- list.files("output/", pattern = glue::glue("ano-transfers-{ANO_ACCOUNT}-2021*"), 
                         full.names = TRUE)
@@ -62,9 +62,9 @@ daily_df <- purrr::map_df(daily_files_fixed, read_transfers) %>%
     bind_rows(., total_file_df)
 
 select_days <- daily_df %>% 
-    mutate(date = as.Date(V1, format = "%d. %m. %Y"), 
+    mutate(date = as.Date(stringr::str_replace_all(V1, "\\s", " "), format = "%d. %m. %Y"), 
            downloaded_date = as.Date(stringr::str_extract(path, "[0-9]{4}-[0-9]{2}-[0-9]{2}"), 
-                                     format = "%Y-%m-%d")) %>%
+                                     format = "%Y-%m-%d")) %>% 
     group_by(date, path, downloaded_date) %>% 
     summarise(n = n(), 
               n_unique = n_distinct(V6)) %>% 
@@ -76,8 +76,8 @@ select_days <- daily_df %>%
            diff_days = downloaded_date - date)
 
 final_data <- daily_df %>%
-    mutate(date = as.Date(V1, format = "%d. %m. %Y"), 
-           amount = convert_amount_to_numeric(V2),
+    mutate(date = as.Date(stringr::str_replace_all(V1, "\\s", " "), format = "%d. %m. %Y"), 
+           amount = convert_to_numeric(V2),
            downloaded_date = as.Date(stringr::str_extract(path, "[0-9]{4}-[0-9]{2}-[0-9]{2}"), 
                                      format = "%Y-%m-%d"), 
            symbols = stringr::str_extract_all(V3, "[0-9]+")) %>%
@@ -131,4 +131,3 @@ if(ANO_ACCOUNT == "4070217"){
     saveRDS(final_data, glue::glue("output/final_data_{ANO_ACCOUNT}.RData"))
     write.csv(final_data, glue::glue("output/final_data_{ANO_ACCOUNT}.csv"), row.names = FALSE)
 }
-

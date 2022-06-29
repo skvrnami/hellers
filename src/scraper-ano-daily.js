@@ -22,26 +22,46 @@ const path = 'output/ano-transfers-' + args[0] + "-" + dateString + '.csv';
   await page.goto('https://www.kb.cz/cs/transparentni-ucty/' + args[0], 
                     {waitUntil: 'networkidle2'});
 
+  // cookies button
+  await page.click('.btn-green');
+
   var shouldStop = false;
   var buttonStatus = false;
   var tableBody;
   var tableRows;
   var i = 0;
   
+  await delay(4000);
+
   while (!shouldStop) {
-    await page.click('.btn-outline-secondary');
+    await page.screenshot({                      
+      path: "screenshot.png",
+      fullPage: true
+    });
+
+    await page.click('div.text-center .btn-outline-secondary');
+
     await delay(4000);
+
+    /*
     try {
-      buttonStatus = await page.$eval('.btn-outline-secondary', x => x.disabled)  
+      buttonStatus = await page.$eval('div.text-center .btn-outline-secondary', el => el.disabled);
     } catch (err) {
+      console.log("error!")
       buttonStatus = true 
     };
-    
+    */
+
     tableBody = await page.$('tbody');
     tableRows = await page.evaluate(body => Array.from(body.getElementsByTagName("tr")).map(x => x.innerText.replaceAll(';', ':').replaceAll('\t', ';').replaceAll('\n', ';')), tableBody);
-    shouldStop = buttonStatus
+    
+    // shouldStop = buttonStatus
     i = i + 1;
     console.log(i);
+
+    if(i > 200){
+      shouldStop = true;
+    }
   };
   
   const tbody = await page.$('tbody');
