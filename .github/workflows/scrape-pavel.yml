@@ -1,4 +1,4 @@
-name: Scrap transfers on transparent accounts
+name: Scrap transfers on Petr Pavel's account
 
 on:
   workflow_dispatch
