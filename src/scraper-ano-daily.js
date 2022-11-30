@@ -4,6 +4,7 @@ var fs = require("fs");
 // 4070217 - general transparent account
 // 4090453 - PSP elections
 // 4090445 - 2020 Senate elections
+// 123-8794230217 - Babiš presidential
 
 var args = process.argv.slice(2);
 var date = new Date(); 
@@ -59,7 +60,8 @@ const path = 'output/ano-transfers-' + args[0] + "-" + dateString + '.csv';
     i = i + 1;
     console.log(i);
 
-    if(i > 200){
+    // this was 200
+    if(i > 4){
       shouldStop = true;
     }
   };
@@ -74,7 +76,7 @@ const path = 'output/ano-transfers-' + args[0] + "-" + dateString + '.csv';
        return console.error(err);
     }
     console.log("Data written successfully!");
- });
+  });
   
   await browser.close();
 })();
