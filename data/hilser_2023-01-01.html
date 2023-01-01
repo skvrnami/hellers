@@ -1,0 +1,6298 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://ib.fio.cz/ib/transparent?a=20182024&f=01.01.2022&t=01.01.2023 -->
+<html xmlns="https://www.w3.org/1999/xhtml" style="--arc-palette-foregroundTertiary:#ECEDFEFF; --arc-background-gradient-color0:#C8CAFEFF; --arc-palette-subtitle:#A4A7FBF7; --arc-palette-maxContrastColor:#212AFBFF; --arc-palette-foregroundSecondary:#8489FBFF; --arc-palette-minContrastColor:#ECEDFEFF; --arc-palette-cutoutColor:#ECEDFEFF; --arc-palette-foregroundPrimary:#3139FBFF; --arc-background-gradient-color1:#FFE6E6FF; --arc-palette-backgroundExtra:#FDFDFFF2; --arc-palette-title:#0A0D4EF6; --arc-palette-hover:#D1D3FDF5; --arc-palette-focus:#8D92FBF9; --arc-palette-background:#E8E9FEF4;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="./hilser_2023-01-01_files/bs_select.min-ver-48D31BCCE684C3E8012F27479890B2BD.css" media="screen, print">
+<script type="text/javascript" src="./hilser_2023-01-01_files/jquery-2.1.1.min-ver-E40EC2161FE7993196F23C8A07346306.js"></script>
+<script type="text/javascript" src="./hilser_2023-01-01_files/bs_select.min-ver-C1B87DE9A72651219420FD1AD8A917E5.js"></script>
+<script type="text/javascript" src="./hilser_2023-01-01_files/wicket-ajax-jquery-ver-6C3579C63E0C4EBFA954D232A7F1B943.js"></script>
+<script type="text/javascript" src="./hilser_2023-01-01_files/jquery-ui-1.10.3.min-ver-EC5989164B6776F16D8586D0E8CE0FAC.js"></script>
+<link rel="stylesheet" type="text/css" href="./hilser_2023-01-01_files/jquery-ui-1.10.3.min-ver-731ACB920C9707A160221C521B92C583.css" media="screen">
+<script type="text/javascript" src="./hilser_2023-01-01_files/DatePicker_cs-ver-B53E393FD0791540160DFB834FE263AD.js"></script>
+<script type="text/javascript" src="./hilser_2023-01-01_files/jquery.quicksearch-ver-C3C7D26BA116FACC98845C56ECB13183.js"></script>
+
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" sizes="16x16" type="image/x-icon" href="https://ib.fio.cz/ib/fio/resource/cz.fio.ib2.common.wicket.web.layout.image.FioImage/png/favicon-ver-BED52CBBA61C3C2EFBCD2A3F722B3146.ico">
+	<title>Internetové bankovnictví | Fio banka</title>
+	
+
+<link rel="stylesheet" type="text/css" href="./hilser_2023-01-01_files/bootstrap_331.min-ver-3AB3438F85AD9F9E27E1AF1FACF0A9C4.css" media="screen, print">
+<script type="text/javascript" src="./hilser_2023-01-01_files/bootstrap_331.min-ver-2616D3564578D8F845813483352802A9.js"></script>
+<link rel="stylesheet" type="text/css" href="./hilser_2023-01-01_files/fontawesome_4.min-ver-269550530CC127B6AA5A35925A7DE6CE.css" media="screen">
+<script type="text/javascript" src="./hilser_2023-01-01_files/defaultJsFunctions-ver-9E9CA8D2CC0C8564BE7215594E80225E.js"></script>
+<script type="text/javascript" src="./hilser_2023-01-01_files/defaultLocalizedJsFunctions-ver-B7988DA714EE0C935177B500A92B1537.js"></script>
+<script type="text/javascript" src="./hilser_2023-01-01_files/typeahead.min-ver-D223EF84ECB16144225340B5E227D67A.js"></script>
+<link rel="stylesheet" type="text/css" href="./hilser_2023-01-01_files/style-ver-3E1DEA72E728B4FA6F9374384DD8178A.css" media="screen">
+<link rel="stylesheet" type="text/css" href="./hilser_2023-01-01_files/print-ver-98E7EA0529EA6D60F27CD68E8A462E77.css" media="print">
+<meta name="description" content="Přihlášení do internetového bankovnictví Fio banky. Kromě plateb si zde můžete založit i další účty, požádat o půjčku, kontokorent a další služby.">
+<script type="text/javascript">
+/*<![CDATA[*/
+Wicket.Event.add(window, "load", function(event) { 
+$("#idaa17ebdb27120e5e1").nextAll(".bootstrap-select").first().remove();
+$("#idaa17ebdb27120e5e1").selectpicker({dropupAuto: false, showSubtext: true});;
+$('#id36f7841adced9e672').datepicker({minDate: -365,maxDate: 0}); $('#idb51f01f8532d25f13').click(function(){$(this).closest('.input-group').children('.form-control').datepicker('show');});;
+$('#idaed5c21584bb1e5c4').datepicker({minDate: -365,maxDate: 0}); $('#id56f736e9d7a767425').click(function(){$(this).closest('.input-group').children('.form-control').datepicker('show');});;
+(function() {
+
+	var oldValFrom = null;
+	var oldValTo = null;
+	
+	function checkRadioRychlaVolba() {
+		if ($("#id16a2aade1653d26d6 .radioTYDEN").is(':checked')) {
+			$("#id16a2aade1653d26d6 .datepickerFrom").datepicker("setDate", "-7d");
+			$("#id16a2aade1653d26d6 .datepickerTo").datepicker("setDate", "0");
+		}
+
+		if ($("#id16a2aade1653d26d6 .radioMESIC").is(':checked')) {
+			$("#id16a2aade1653d26d6 .datepickerFrom").datepicker("setDate", "-1m");
+			$("#id16a2aade1653d26d6 .datepickerTo").datepicker("setDate", "0");
+		}
+
+		if ($("#id16a2aade1653d26d6 .radioVLASTNI").is(':checked')) {
+			$("#id16a2aade1653d26d6 .datepickerFrom").datepicker('enable');
+			$("#id16a2aade1653d26d6 .datepickerTo").datepicker('enable');
+		}
+		
+		oldValFrom = $("#id16a2aade1653d26d6 .datepickerFrom").datepicker({ dateFormat: 'yy-mm-dd' }).val();
+		oldValTo = $("#id16a2aade1653d26d6 .datepickerTo").datepicker({ dateFormat: 'yy-mm-dd' }).val();
+	}
+	;
+
+	checkRadioRychlaVolba();
+	$("#id16a2aade1653d26d6 .radios").change(function() {
+		checkRadioRychlaVolba();
+	});
+
+	$("#id16a2aade1653d26d6 .datepickerFrom").on('change keypress paste focus textInput input', function() {
+		var val = ($("#id16a2aade1653d26d6 .datepickerFrom").datepicker({dateFormat : 'yy-mm-dd'}).val());
+		if (val !== oldValFrom) {
+			oldValFrom = val;
+			$("#id16a2aade1653d26d6 .radioVLASTNI").prop("checked", true);
+		}
+	});
+	
+	$("#id16a2aade1653d26d6 .datepickerTo").on('change keypress paste focus textInput input', function() {
+		var val = ($("#id16a2aade1653d26d6 .datepickerTo").datepicker({ dateFormat: 'yy-mm-dd' }).val());        
+		if (val != oldValTo) {
+        	oldValFrom = val;
+        	$("#id16a2aade1653d26d6 .radioVLASTNI").prop("checked", true);
+        }
+	});
+})();;
+(function() {
+
+	$("#id0540b3b6b673e2e37").focus(function() {
+		$(this).prev(".input-group-addon").css("border-color", "#66AFE9");
+	});
+
+	$("#id0540b3b6b673e2e37").focusout(function() {
+		$(this).prev(".input-group-addon").css("border-color", "#CCCCCC");
+	});
+	
+	var qs = $("#id0540b3b6b673e2e37").quicksearch('#id6df9404a577566ee8 tbody tr:not(".sumacniRadek")', {});
+	
+	function showHideRemove(){
+		 if($.trim($("#id0540b3b6b673e2e37").val()).length) { // mame text
+			 $("#id0540b3b6b673e2e37").parent().find(".deleteText").show();
+	     }
+		 else{
+			 $("#id0540b3b6b673e2e37").parent().find(".deleteText").hide();
+		 }
+	}
+	showHideRemove();
+	$("#id0540b3b6b673e2e37").keyup(function(event) {
+		showHideRemove();
+    });
+	$("#id0540b3b6b673e2e37").parent().find(".deleteText").click(function(){
+		$("#id0540b3b6b673e2e37").val("");
+		showHideRemove();
+		$("#id0540b3b6b673e2e37").focus();
+		qs.reset();
+    });
+
+	
+	
+})();
+;
+setMinimalContentSize();;
+;});
+/*]]>*/
+</script>
+</head>
+<body>
+	
+	<div class="wrapperPage wrapperPageTrans">
+		<div class="wrapperHeader">
+			<div class="green_border"></div>
+			<div class="container" style="margin-bottom: 20px">
+				<div class="row">
+					<div class="col-md-4 col-xs-6" style="line-height: 50px;">
+						<img class="logo_header img-responsive" src="./hilser_2023-01-01_files/logo_fio-ver-894B2A39F77CABA34D70A4AC4C0FE0B6.png">
+					</div>
+					<div class="col-md-8 nav_header">
+						<div>
+	<form class="form-inline pull-right" id="idc3ebeb21bbeb84b59" method="post" action="https://ib.fio.cz/ib/transparent?-1.-languageSelector-form&amp;a=20182024&amp;f=01.01.2022&amp;t=01.01.2023"><div id="idc3ebeb21bbeb84b59_hf_0" hidden="" class="hidden-fields"></div>
+		<div class="form-group">
+			<select class="form-control pull-right" name="languageDropDown" id="idaa17ebdb27120e5e1" onchange="this.form.submit()" style="display: none;">
+<option selected="selected" value="CZECH" data-content="&lt;span&gt;&lt;img src=&#39;./fio/resource/cz.fio.ib2.common.wicket.web.layout.image.FioImage/png/VlajkaCzMala-ver-425A2FE80A90297180F0DCC77B3F66B6.png&#39;&gt; Česky&lt;/span&gt;">Česky</option>
+<option value="SLOVAK" data-content="&lt;span&gt;&lt;img src=&#39;./fio/resource/cz.fio.ib2.common.wicket.web.layout.image.FioImage/png/VlajkaSkMala-ver-54AA18CD9834A48A7616BB29EA79F102.png&#39;&gt; Slovensky&lt;/span&gt;">Slovensky</option>
+<option value="ENGLISH" data-content="&lt;span&gt;&lt;img src=&#39;./fio/resource/cz.fio.ib2.common.wicket.web.layout.image.FioImage/png/VlajkaGbMala-ver-E4896565595FC22E344FD619C0ED15BB.png&#39;&gt; English&lt;/span&gt;">English</option>
+</select><div class="btn-group bootstrap-select form-control pull-right"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" data-id="idaa17ebdb27120e5e1"><span class="filter-option pull-left"><span><img src="./hilser_2023-01-01_files/VlajkaCzMala-ver-425A2FE80A90297180F0DCC77B3F66B6.png">&nbsp;Česky</span></span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li data-original-index="0" class="selected"><a tabindex="0" class="" data-normalized-text="&lt;span&gt;&lt;img src=&#39;./fio/resource/cz.fio.ib2.common.wicket.web.layout.image.FioImage/png/VlajkaCzMala-ver-425A2FE80A90297180F0DCC77B3F66B6.png&#39;&gt; Česky&lt;/span&gt;"><span><img src="./hilser_2023-01-01_files/VlajkaCzMala-ver-425A2FE80A90297180F0DCC77B3F66B6.png">&nbsp;Česky</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-normalized-text="&lt;span&gt;&lt;img src=&#39;./fio/resource/cz.fio.ib2.common.wicket.web.layout.image.FioImage/png/VlajkaSkMala-ver-54AA18CD9834A48A7616BB29EA79F102.png&#39;&gt; Slovensky&lt;/span&gt;"><span><img src="./hilser_2023-01-01_files/VlajkaSkMala-ver-54AA18CD9834A48A7616BB29EA79F102.png">&nbsp;Slovensky</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-normalized-text="&lt;span&gt;&lt;img src=&#39;./fio/resource/cz.fio.ib2.common.wicket.web.layout.image.FioImage/png/VlajkaGbMala-ver-E4896565595FC22E344FD619C0ED15BB.png&#39;&gt; English&lt;/span&gt;"><span><img src="./hilser_2023-01-01_files/VlajkaGbMala-ver-E4896565595FC22E344FD619C0ED15BB.png">&nbsp;English</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>
+		</div>
+	</form>
+</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container wrapperBody" style="padding-bottom: 69px">
+			<div class="row">
+				<div class="col-lg-12 content" style="min-height: 400px;">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="page-header">
+								<h1 style="display: block; text-align: center;">
+									Pohyby na transparentním účtu
+								</h1>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							
+								<div>
+									<strong>Číslo účtu:</strong>
+									
+    20182024 / 2010
+    
+
+								</div>
+							
+							<div>
+								<strong>Majitel účtu:</strong>
+								MUDr. Hilšer, Marek
+							</div>
+							<div>
+								<strong>Název účtu:</strong>
+								Marek Hilšer - volební účet
+							</div>
+							
+						</div>
+						<div class="col-md-6">
+							<div>
+		<div class="input-group">
+			<span class="input-group-addon inputAddonPre">
+				<i class="fa fa-search"></i>
+				<i class="fa fa-times deleteText" style="display: none;"></i>
+			</span> 
+			<input style="border-left: medium none;" type="text" autocomplete="off" class="form-control searchInput" id="id0540b3b6b673e2e37" placeholder="Co hledáte?">
+		</div>
+	</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-9 pohybySum">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Stav k: <span>01.01.2022</span></th>
+										<th>Stav k: <span>01.01.2023</span></th>
+										<th>Suma příjmů</th>
+										<th>Suma výdajů</th>
+										<th>Suma celkem</th>
+										<th>Běžný zůstatek</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+		0,00&nbsp;CZK
+	</td>
+										<td>
+		28&nbsp;519,70&nbsp;CZK
+	</td>
+										<td>
+		1&nbsp;281&nbsp;983,94&nbsp;CZK
+	</td>
+										<td class="negative">
+		-1&nbsp;253&nbsp;464,24&nbsp;CZK
+	</td>
+										<td>
+		28&nbsp;519,70&nbsp;CZK
+	</td>
+										<td>
+		28&nbsp;519,70&nbsp;CZK
+	</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div style="position: relative; top: -8px;" class="col-md-12">
+									<a class="pull-right btn btn-transparent hidden-print" href="https://ib.fio.cz/ib/transparent?a=20182024&amp;f=01.01.2022&amp;t=01.01.2023#" onclick="window.print();"><i class="fa fa-print fa-lg"></i>
+									</a>
+								</div>
+							</div>
+							<div class="row">
+								<div style="position: relative; top: -6px;" class="col-md-12 hidden-print">
+									<div class="btn-group dropdownCloseBox pull-right">
+										<button class="btn btn-default dropdownCloseBtn" type="button">
+											<span>01.01.2022</span>&nbsp;-&nbsp;<span>01.01.2023</span>
+											<div class="caret"></div>
+										</button>
+										<div class="dropdown-menu pohybySelectDate dropdownClose">
+											<form class="form-inline" id="id16a2aade1653d26d6" method="post" action="https://ib.fio.cz/ib/transparent?-1.-dateForm&amp;a=20182024&amp;f=01.01.2022&amp;t=01.01.2023"><div id="id16a2aade1653d26d6_hf_0" hidden="" class="hidden-fields"></div>
+												<div class="row">
+													<div class="col-md-12 text-center">
+														<div class="radio">
+															<label><input type="radio" name="rychlaVolba" class="radios radioMESIC"> <span>poslední měsíc</span></label>
+														</div>
+														<div class="radio">
+															<label><input type="radio" name="rychlaVolba" class="radios radioTYDEN"> <span>poslední týden</span></label>
+														</div>
+														<div class="radio">
+															<label><input type="radio" name="rychlaVolba" checked="checked" class="radios radioVLASTNI"> <span>vlastní</span></label>
+														</div>
+
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12">
+														<div style="background: none repeat scroll 0% 0% rgb(255, 255, 255); padding: 10px;">
+															<div class="row">
+																<div class="col-md-6">
+																	<div class="form-group">
+																		<label for="id36f7841adced9e672">Od</label>
+																		<div class="input-group">
+		<input type="text" class="form-control input-sm datepicker datepickerFrom hasDatepicker" value="01.01.2022" name="datumOd:inputField" id="id36f7841adced9e672">
+		<span class="input-group-addon" style="cursor: pointer" id="idb51f01f8532d25f13"> <i class="fa fa-calendar"></i>
+		</span>
+	</div>
+																	</div>
+																</div>
+																<div class="col-md-6">
+																	<div class="form-group">
+																		<label for="idaed5c21584bb1e5c4">Do</label>
+																		<div class="input-group">
+		<input type="text" class="form-control input-sm datepicker datepickerTo hasDatepicker" value="01.01.2023" name="datumDo:inputField" id="idaed5c21584bb1e5c4">
+		<span class="input-group-addon" style="cursor: pointer" id="id56f736e9d7a767425"> <i class="fa fa-calendar"></i>
+		</span>
+	</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<hr>
+												<div class="row">
+													<div class="col-md-12">
+														<button type="submit" class="btn greenBtn btn-sm pull-left">
+															Zobrazit
+														</button>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr>
+					
+					
+					<table class="table" id="id6df9404a577566ee8">
+		<thead>
+			<tr>
+		
+			<th>Datum</th>
+		
+			<th class="text-right">Částka</th>
+		
+			<th>Typ</th>
+		
+			<th>Název protiúčtu</th>
+		
+			<th>Zpráva pro příjemce</th>
+		
+			<th>KS</th>
+		
+			<th>VS</th>
+		
+			<th>SS</th>
+		
+			<th>Poznámka</th>
+		
+	</tr>
+		</thead>
+		<tbody>
+			
+				<tr>
+		
+			<td>31.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-329.9100">
+		-329,91&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK GZR6GK3K62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 31.12.2022, částka  329.91 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK GZR6GK3K62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 31.12.2022, částka  329.91 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>30.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="17.1700">
+		17,17&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Ersin Ramadani</td>
+		
+			<td>
+		<div>Vydrzte i kdyz to nevyjde, jednou se vsichni umoudri a svet bude inspirovan Vasimi myslenkami:) Landogy</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>17</td>
+		
+			<td></td>
+		
+			<td>Ersin Ramadani</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>30.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="500.0000">
+		500,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>TUMAJEROVA ADELA</td>
+		
+			<td>
+		<div>Příspěvek na kampaň, A. TumajerováJiráskova 381, Liberec 12, 460 14</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>0</td>
+		
+			<td></td>
+		
+			<td>TUMAJEROVA ADELA</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>30.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink.cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>29.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="3000.0000">
+		3&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>MARTIN SVÁROVSKÝ</td>
+		
+			<td>
+		<div>nar. 23.3.1974, Junácká 7, Praha 6</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>MARTIN SVÁROVSKÝ</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>29.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink.cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>28.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="500.0000">
+		500,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Zlámalová Kateřina</td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Zlámalová Kateřina</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>28.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="500.0000">
+		500,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>HŮLKA VÁCLAV</td>
+		
+			<td>
+		<div>Václav Hůlka</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>HŮLKA VÁCLAV</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>28.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink.cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>28.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="2000.0000">
+		2&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>HORÁK PETR - DUBŇANY</td>
+		
+			<td>
+		<div>Příští prezident</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>HORÁK PETR - DUBŇANY</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>28.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="500.0000">
+		500,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>KOLAJOVA JANA</td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>0</td>
+		
+			<td></td>
+		
+			<td>KOLAJOVA JANA</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>28.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="500.0000">
+		500,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Ing.Bozděch Václav</td>
+		
+			<td>
+		<div>od Václava Bozděcha</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Ing.Bozděch Václav</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>27.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="500.0000">
+		500,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Mgr.Češková Eva</td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Mgr.Češková Eva</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>27.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink.cz/alkohol-drink-agent-pavek-agent-bures-a-blondyna-z-diplomove-afery-2-pribeh-z-prazskeho-hradu/</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>23.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink.cz/alkohol-drink-agent-pavek-agent-bures-a-blondyna-z-diplomove-afery-2-pribeh-z-prazskeho-hradu/</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>23.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK 23ZSKHFJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 22.12.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK 23ZSKHFJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 22.12.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>22.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="500.0000">
+		500,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Pokorná, Barbora</td>
+		
+			<td>
+		<div>Barbora Pokorná, 8.4.1998, Habrovany</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Barbora Pokorná, 8.4.1998, Habrovany</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>22.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-70000.0000">
+		-70&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Faktura 822022 - Doplatek za předvolební videoklip pro ČT + videa podporovatelů</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>22.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-7500.0000">
+		-7&nbsp;500,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Faktura202220 - Produkce setkání s občany a debata v Divadle MA 16.12 2022</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>22.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink.cz/alkohol-drink-agent-pavek-agent-bures-a-blondyna-z-diplomove-afery-2-pribeh-z-prazskeho-hradu/</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>22.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1234.5000">
+		1&nbsp;234,50&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>MUDr. Martin Trefný</td>
+		
+			<td>
+		<div>MUDr. Martin Trefný, 13.5.1991, Praha 6</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>MUDr. Martin Trefný</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>22.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="5000.0000">
+		5&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>JANOUSEK PETR</td>
+		
+			<td>
+		<div>Petr Janoušek 14. 7. 1972 Praha 6 Břevnov</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>0</td>
+		
+			<td></td>
+		
+			<td>JANOUSEK PETR</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>22.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-420.3800">
+		-420,38&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: Wix.com,  5, rue Guillaume Kroll, Luxembourg, 1882, LUX, dne 21.12.2022, částka  16.94 EUR</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: Wix.com,  5, rue Guillaume Kroll, Luxembourg, 1882, LUX, dne 21.12.2022, částka  16.94 EUR</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>22.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="2000.0000">
+		2&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Luděk Pivoňka</td>
+		
+			<td>
+		<div>Mohelnice podporuje.</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Luděk Pivoňka</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>21.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1000.0000">
+		1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Kudělka, Ondřej</td>
+		
+			<td>
+		<div>Ondřej Kudělka, 14.12.1988, Hodslavice</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Ondřej Kudělka, 14.12.1988, Hodslavice</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>21.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-52500.0000">
+		-52&nbsp;500,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Faktura 2022003 - Organizace volební kampaně, mediální a produkční práce - listopad 2022</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>21.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-40000.0000">
+		-40&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>faktura 2022012 - správa sociálních sítí prosinec 2022</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>21.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-9413.0000">
+		-9&nbsp;413,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>2210446</td>
+		
+			<td></td>
+		
+			<td>Faktura - 2210446 - Produkce -  tiskové materiály pro tiskovou konferenci</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>21.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="5000.0000">
+		5&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>MEZIAN KAMAL</td>
+		
+			<td>
+		<div>MUDr. K. Mezian</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>0</td>
+		
+			<td></td>
+		
+			<td>MEZIAN KAMAL</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>21.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>20.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-3000.0000">
+		-3&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>222000045</td>
+		
+			<td></td>
+		
+			<td>Produkce setkání s voliči - Liberec</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>20.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink.cz/alkohol-drink-agent-pavek-agent-bures-a-blondyna-z-diplomove-afery-2-pribeh-z-prazskeho-hradu/</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>19.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>18.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK TEXECKTJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 18.12.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK TEXECKTJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 18.12.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>17.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="111.0000">
+		111,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Jakub Jalůvka</td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Jakub Jalůvka</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>16.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>16.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK NB4H3K3K62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 15.12.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK NB4H3K3K62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 15.12.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>15.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>14.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="9.9900">
+		9,99&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Maňka Tomáš</td>
+		
+			<td>
+		<div>Tomáš Maňka, 12. 9. 2006, Zábřeh</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Maňka Tomáš</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>14.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1000.0000">
+		1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Ing. David Jaroš</td>
+		
+			<td>
+		<div>David Jaroš, 27.12.1980, Rohatec</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Ing. David Jaroš</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>14.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink.cz/alkohol-drink-agent-pavek-agent-bures-a-blondyna-z-diplomove-afery/</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>13.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-5000.0000">
+		-5&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>16</td>
+		
+			<td></td>
+		
+			<td>faktura 16 - správa sociálních sítí - listopad 2022</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>13.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink.cz/alkohol-drink-agent-pavek-agent-bures-a-blondyna-z-diplomove-afery/</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>12.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink.cz/alkohol-drink-agent-pavek-agent-bures-a-blondyna-z-diplomove-afery/</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>11.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="5000.0000">
+		5&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>MUDr.Hönig Jiří,ml.</td>
+		
+			<td>
+		<div>MUDr.Jiří Hönig, nar.7.9.1976, Chomutov</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>MUDr.Hönig Jiří,ml.</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>09.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="10000.0000">
+		10&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>MUDr.Klézl Zdeněk</td>
+		
+			<td>
+		<div>Zdeněk Klézl, 20.10.1956, Praha 7</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>MUDr.Klézl Zdeněk</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>09.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-7500.0000">
+		-7&nbsp;500,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>202221</td>
+		
+			<td></td>
+		
+			<td>produkce předvolebního setkání - benefiční koncert pro pro zdravotně postižené</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>09.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-50000.0000">
+		-50&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>faktura 2022/02 - poradenské služby, komunikace s médii, produkční práce říjen 2022 PJ</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>09.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="200000.0000">
+		200&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>„Marek Hilšer do Senátu“</td>
+		
+			<td>
+		<div>Převod prostředků na prez. kampaň z provozního účtu MHS</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Převod prostředků na prez. kampaň z provozního účtu MHS</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>09.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-70000.0000">
+		-70&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Faktura  - 10 - Organizace prezidentské kampaně, organizace volebního týmu, produkční práce.</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>09.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-80000.0000">
+		-80&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>faktura 79/2022 - Výroba předvolebního videoklipu - záloha</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>09.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-40000.0000">
+		-40&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Faktura 2022010 - správa sociálních sítí 14.10 -14.11.2022</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>09.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>09.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-9000.0000">
+		-9&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: GOOGLE *ADS5553232196,  70 Sir John Rogerson's Quay, 650-253-0000, 2, IRL, dne 8.12.2022, částka  9000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: GOOGLE *ADS5553232196,  70 Sir John Rogerson's Quay, 650-253-0000, 2, IRL, dne 8.12.2022, částka  9000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>08.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="100.0000">
+		100,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Fejer, Robert</td>
+		
+			<td>
+		<div>Robert Fejer, nar. 27.10.1972, 289 22 Lysá nad Labem</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Robert Fejer, nar. 27.10.1972, 289 22 Lysá nad Labem</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>08.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="2000.0000">
+		2&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>MgA. Michal Kráčmer</td>
+		
+			<td>
+		<div>Michal Kráčmer, 18. 6. 1988, Litvínov; Neodstupujte, držím Vám palce, jste vzorem pro politiky!</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>MgA. Michal Kráčmer</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>08.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="777.0000">
+		777,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Matouš Hájek</td>
+		
+			<td>
+		<div>Matouš Hájek, 14.4.1991, Praha</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Matouš Hájek</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>08.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>07.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>06.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>06.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="200000.0000">
+		200&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>„Marek Hilšer do Senátu“</td>
+		
+			<td>
+		<div>Převod prostředků na prez. kampaň z provozního účtu MHS</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Převod prostředků na prez. kampaň z provozního účtu MHS</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>06.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1000.0000">
+		1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>ANDRÁŠ STANISLAV</td>
+		
+			<td>
+		<div>Stanislav Andráš, 16. 05. 1981, Letohrad</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td>0</td>
+		
+			<td>0</td>
+		
+			<td>ANDRÁŠ STANISLAV</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>05.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>04.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="5000.0000">
+		5&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>JIŘÍ MATĚJOVSKÝ</td>
+		
+			<td>
+		<div>Jiří Matějovský 30.06.1974 Struhařov 25164</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>JIŘÍ MATĚJOVSKÝ</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>04.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK VFNHLH7J62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 4.12.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK VFNHLH7J62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 4.12.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>04.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-6000.0000">
+		-6&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: GOOGLE *ADS5553232196,  70 Sir John Rogerson's Quay, 650-253-0000, 2, IRL, dne 4.12.2022, částka  6000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: GOOGLE *ADS5553232196,  70 Sir John Rogerson's Quay, 650-253-0000, 2, IRL, dne 4.12.2022, částka  6000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>03.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="30.0000">
+		30,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Ing. arch. Sládek, Petr</td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>02.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK 445MUH3J62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 2.12.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK 445MUH3J62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 2.12.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>02.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>02.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="100.0000">
+		100,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>ALENA POKORNA</td>
+		
+			<td>
+		<div>ALENA POKORNÁ, CHVALKOVICE</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>ALENA POKORNA</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>02.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1698.8300">
+		-1&nbsp;698,83&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: GOOGLE *ADS5553232196,  70 Sir John Rogerson's Quay, 650-253-0000, 2, IRL, dne 1.12.2022, částka  1698.83 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: GOOGLE *ADS5553232196,  70 Sir John Rogerson's Quay, 650-253-0000, 2, IRL, dne 1.12.2022, částka  1698.83 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>01.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK RWDMDHXJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 1.12.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK RWDMDHXJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 1.12.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>01.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>01.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1500.0000">
+		-1&nbsp;500,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: GOOGLE *ADS5553232196,  70 Sir John Rogerson's Quay, 650-253-0000, 2, IRL, dne 30.11.2022, částka  1500.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: GOOGLE *ADS5553232196,  70 Sir John Rogerson's Quay, 650-253-0000, 2, IRL, dne 30.11.2022, částka  1500.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>01.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-105.5100">
+		-105,51&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK 5JE5TJTJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 30.11.2022, částka  105.51 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK 5JE5TJTJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 30.11.2022, částka  105.51 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>30.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK ZVF3PHKJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 30.11.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK ZVF3PHKJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 30.11.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>30.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>30.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="2000.0000">
+		2&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Lucie Burišin</td>
+		
+			<td>
+		<div>Lucie Burisin, 20.9.1980, Praha</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Lucie Burišin</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>29.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="300.0000">
+		300,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>František Novotný</td>
+		
+			<td>
+		<div>František Novotný, 10.7.1996, Praha</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>František Novotný</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>29.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK PF97HHBJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 29.11.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK PF97HHBJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 29.11.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>29.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="10000.0000">
+		10&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Doc.Ing.Horák Jakub,</td>
+		
+			<td>
+		<div>Jakub Horák, 24.10.1979, Sruby</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Doc.Ing.Horák Jakub,</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>29.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>28.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1000.0000">
+		1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Vlasta Kovalčíková L</td>
+		
+			<td>
+		<div>Vlasta Kovalčíková Lindová, 2.1.1965, Plzeň</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Vlasta Kovalčíková L</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>28.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK QZ9TGJPJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 28.11.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK QZ9TGJPJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 28.11.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>28.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1000.0000">
+		1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>MICHALA LAUSMANOVA</td>
+		
+			<td>
+		<div>PŘEVOD PROSTŘEDKŮ</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>MICHALA LAUSMANOVA</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>28.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>28.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="333.0000">
+		333,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>STUDENÝ PETR</td>
+		
+			<td>
+		<div>hodně štěstí v kampani, arg. tangona hrad</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td>0</td>
+		
+			<td>0</td>
+		
+			<td>STUDENÝ PETR</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>28.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="500.0000">
+		500,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>ZAMOROVA JANA</td>
+		
+			<td>
+		<div>Jana Zamorova 22.3.1968 Praha</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>0</td>
+		
+			<td></td>
+		
+			<td>ZAMOROVA JANA</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>27.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK 6KEYYGXH62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 27.11.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK 6KEYYGXH62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 27.11.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>27.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1000.0000">
+		1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Ing. Radovan Bobek</td>
+		
+			<td>
+		<div>Radovan Bobek,  20.12.1967, Habří, Řehlovice</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Ing. Radovan Bobek</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>26.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="250.0000">
+		250,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Eva Klánová</td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Eva Klánová</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>26.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1000.0000">
+		1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Otakar Hypš</td>
+		
+			<td>
+		<div>otakar hyps, 31 8 1988, hradec kralove</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Otakar Hypš</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>26.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK KAGP9HXJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 26.11.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK KAGP9HXJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 26.11.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>26.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1000.0000">
+		1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Petr Ogurčák</td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Petr Ogurčák</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>26.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="500.0000">
+		500,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Ing.arch. Myslivec, Tomáš</td>
+		
+			<td>
+		<div>Tomáš Myslivec, 1.2.1965, Liberec</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Tomáš Myslivec, 1.2.1965, Liberec</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>25.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="800.0000">
+		800,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Pavlíček, Martin</td>
+		
+			<td>
+		<div>Martin Pavlicek, 22.03.1988, Brno</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Martin Pavlicek, 22.03.1988, Brno</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>25.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="2000.0000">
+		2&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Eliáš Slunečko</td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Eliáš Slunečko</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>25.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="200.0000">
+		200,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Jakub Vodák</td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Jakub Vodák</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>25.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>25.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="500.0000">
+		500,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Rabas David</td>
+		
+			<td>
+		<div>David Rabas, 30.08.1990, Dobřany 334 41</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Rabas David</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>24.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>24.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>2908386340</td>
+		
+			<td>43</td>
+		
+			<td>On-line reklama</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>24.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-10154.3200">
+		-10&nbsp;154,32&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>566670362</td>
+		
+			<td></td>
+		
+			<td>0AAA-D4WK-SXUM www.reklamnitechnologie.cz</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>23.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>23.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="100.0000">
+		100,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>MILAN HRABAL</td>
+		
+			<td>
+		<div>MILAN HRABAL, 22.12.1978, VARNSDORF</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>MILAN HRABAL</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>20.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="250.0000">
+		250,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Kaňok Pavel</td>
+		
+			<td>
+		<div>Pavel Kaňok, 1.2.1988, Kuřim</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Kaňok Pavel</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>18.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>18.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-6048.7900">
+		-6&nbsp;048,79&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>2022079</td>
+		
+			<td></td>
+		
+			<td>Faktura 2022079 - nástroj pro on-line reklamu</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>18.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-5000.0000">
+		-5&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>15</td>
+		
+			<td></td>
+		
+			<td>Faktura 15 - správa sociálních sítí - říjen 2022</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>17.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="0.0100">
+		0,01&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Pavel Tr?ster</td>
+		
+			<td>
+		<div>alkoholdrink cz</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Pavel Tr?ster</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>14.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-6050.0000">
+		-6&nbsp;050,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>20220051</td>
+		
+			<td></td>
+		
+			<td>Faktura 20220051 - produkce - pronájem prostor oznámení kandidatury 7.11.</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>11.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1000.0000">
+		1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Ing.Roztočilová Luci</td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Ing.Roztočilová Luci</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>10.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-2900.0000">
+		-2&nbsp;900,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>220195</td>
+		
+			<td></td>
+		
+			<td>Faktura 220195 - úhrada produkce setkání s občany Hranice na Moravě</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>09.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="5000.0000">
+		5&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>Vladimir Vachek</td>
+		
+			<td>
+		<div>Vladimír Vachek1,4,194914100 Praha 4 - Záběhlice</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Vladimir Vachek</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>09.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK JYQDTGXJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 8.11.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK JYQDTGXJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 8.11.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>08.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-40000.0000">
+		-40&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Faktura 2022006 - Podpora sociálních sítí FB - Instagram</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>08.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-70000.0000">
+		-70&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Organizace prezidentské kampaně a volebního týmu - říjen 2022</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>05.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="200.0000">
+		200,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Victory Zahrádka</td>
+		
+			<td>
+		<div>Victory Zahrádka, nar. 18.09.2004, trvalý pobyt Praha 10</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Victory Zahrádka</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>05.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK Y9G4QGXJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 4.11.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK Y9G4QGXJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 4.11.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>04.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-500.0000">
+		-500,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>2874494183</td>
+		
+			<td>50</td>
+		
+			<td></td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>04.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="500.0000">
+		500,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>JIRI DVORACEK</td>
+		
+			<td>
+		<div>DVORACEK JIŘÍ 4.8.49. HRANICE</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>JIRI DVORACEK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>01.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-389.6600">
+		-389,66&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK DJRURGBJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 31.10.2022, částka  389.66 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK DJRURGBJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 31.10.2022, částka  389.66 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>29.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK QDPSPGBJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 28.10.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK QDPSPGBJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 28.10.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>27.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-968.0000">
+		-968,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>2210374</td>
+		
+			<td></td>
+		
+			<td>Tiskové materiály</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>27.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-605.0000">
+		-605,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>2022475</td>
+		
+			<td></td>
+		
+			<td>Výlep plakátů - debata Klatovy</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>27.10.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1000.0000">
+		1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>LINHART PETR</td>
+		
+			<td>
+		<div>Petr Linhart, 23.06.1982, Náchod</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0308</td>
+		
+			<td>102022</td>
+		
+			<td></td>
+		
+			<td>LINHART PETR</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>25.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK WF3VFGXJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 25.10.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK WF3VFGXJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 25.10.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>18.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK KK8RFHPJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 17.10.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK KK8RFHPJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 17.10.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>18.10.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1000.0000">
+		1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>CESKA POSTA, S.P.</td>
+		
+			<td>
+		<div> pošta 126399 14.10.2022 č 6BOHUMLBEN **ČEK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td>0</td>
+		
+			<td></td>
+		
+			<td>CESKA POSTA, S.P.</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>17.10.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="500.0000">
+		500,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>KLVAČOVÁ HANA</td>
+		
+			<td>
+		<div>Pavel Klvač, datum narození  26.1.1952, trvalý pobyt  Drnovice u Vyškova č.171 PSČ 68304</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0308</td>
+		
+			<td>9</td>
+		
+			<td>0</td>
+		
+			<td>KLVAČOVÁ HANA</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>16.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK N7BV7GXJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 15.10.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK N7BV7GXJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 15.10.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>15.10.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="2000.0000">
+		2&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>VRBOVÁ MARTINA</td>
+		
+			<td>
+		<div>Martina Vrbova 18.3.1974 Hradec Kralove</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>VRBOVÁ MARTINA</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>14.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK 3G5WCHPJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 14.10.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK 3G5WCHPJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 14.10.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>14.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-14520.0000">
+		-14&nbsp;520,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>220100121</td>
+		
+			<td></td>
+		
+			<td>Produkce debata Plzeň - pronájem, ozvučení</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>14.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-975.0000">
+		-975,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>2022000085</td>
+		
+			<td></td>
+		
+			<td>Tisk plakátů - debata Plzeň</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>14.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-581.0000">
+		-581,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>10231739</td>
+		
+			<td></td>
+		
+			<td>Výlep plakátů - debata Plzeň</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>13.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-50000.0000">
+		-50&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Úhrada - mediální a produkční práce - září 2022</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>13.10.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1000.0000">
+		1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Mgr.Krenke Alexej</td>
+		
+			<td>
+		<div>Alexej Krenke, nar 18.06.1971,Hřensko</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Mgr.Krenke Alexej</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>13.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK 8GEZ9G7J62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 12.10.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK 8GEZ9G7J62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 12.10.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>12.10.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="10000.0000">
+		10&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Jan Višinka</td>
+		
+			<td>
+		<div>Jan Višinka 19.6.1950 Brno příspěvek Hišner presidentem od rodiny Višinkovy a Vítkovy</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Jan Višinka</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>12.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK WM74KG3J62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 11.10.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK WM74KG3J62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 11.10.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>10.10.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="2000.0000">
+		2&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>MICHAL ZAMBOCH</td>
+		
+			<td>
+		<div>MICHAL ŽAMBOCH, 2.3.1979, OLOMOUC - DROŽDÍN</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>MICHAL ZAMBOCH</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>10.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK 969H2GXJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 9.10.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK 969H2GXJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 9.10.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>09.10.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="333.0000">
+		333,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Tereza Horáková</td>
+		
+			<td>
+		<div>Tereza Horáková, 11.03.1997, Vyškov</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td>0000000000</td>
+		
+			<td>0000000000</td>
+		
+			<td>Tereza Horáková</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>09.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK A84QCGKJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 8.10.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK A84QCGKJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 8.10.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>06.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-70000.0000">
+		-70&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Organizace volební kampaně - komunikace s médii, organizace sběru podpisů, příprava odborných textů a organizace volebního týmu za měsíc zář</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>06.10.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="10000.0000">
+		10&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>RNDr. Tomáš Elbert</td>
+		
+			<td>
+		<div>Tomáš Elbert, nar. 20.9.1949, Pod vrstevnicí 435/4, 14000 Praha 4 - Krč</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>490920065</td>
+		
+			<td></td>
+		
+			<td>RNDr. Tomáš Elbert</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>06.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK QQ5E4GBJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 5.10.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK QQ5E4GBJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 5.10.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>04.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK EQME5H3K62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 3.10.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK EQME5H3K62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 3.10.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>02.10.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="500.0000">
+		500,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>DVOŘÁK ONDŘEJ</td>
+		
+			<td>
+		<div>Ondřej Dvořák, 2. 9. 1977, Praha</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>DVOŘÁK ONDŘEJ</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>01.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-112.6200">
+		-112,62&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK 3UKESFXJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 30.9.2022, částka  112.62 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK 3UKESFXJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 30.9.2022, částka  112.62 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>30.09.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="250.0000">
+		250,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>Adéla Vepřková</td>
+		
+			<td>
+		<div>Adéla Vepřková, 30. 6. 1995, Šumperk</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Adéla Vepřková</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>30.09.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK MXFB5GKJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 29.9.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK MXFB5GKJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 29.9.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>29.09.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="53.9900">
+		53,99&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>HOHN MARTIN</td>
+		
+			<td>
+		<div>Martin Hohn, 24.3.1978, Moravičany361, 789 82</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>0</td>
+		
+			<td></td>
+		
+			<td>HOHN MARTIN</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>29.09.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="500.0000">
+		500,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>SVARCOVA EVA</td>
+		
+			<td>
+		<div>Eva Švarcová, 11.1.1984, Holoubkov</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>0</td>
+		
+			<td></td>
+		
+			<td>SVARCOVA EVA</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>27.09.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="500.0000">
+		500,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Uhlíř Vít</td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Uhlíř Vít</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>27.09.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1000.0000">
+		1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>ZÍKA PAVEL</td>
+		
+			<td>
+		<div>Pavel Zika, 11.11.1967, Praha 6 - mate muj hlas!</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td>0</td>
+		
+			<td>0</td>
+		
+			<td>ZÍKA PAVEL</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>27.09.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="300.0000">
+		300,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>JANA BARTIKOVA</td>
+		
+			<td>
+		<div>JANA BARTÍKOVÁ, 7.7.1950, BRNO</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0308</td>
+		
+			<td>26092022</td>
+		
+			<td></td>
+		
+			<td>JANA BARTIKOVA</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>27.09.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="2000.0000">
+		2&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>KESSLEROVA OLGA</td>
+		
+			<td>
+		<div>Olga Kesslerova, nar. 23.2.1984, Pha</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>0</td>
+		
+			<td></td>
+		
+			<td>KESSLEROVA OLGA</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>26.09.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-8800.0000">
+		-8&nbsp;800,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>20220123</td>
+		
+			<td></td>
+		
+			<td>Faktura 20220123 - Správa soc. sítí srpen 2022</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>26.09.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-10200.0000">
+		-10&nbsp;200,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>20220024</td>
+		
+			<td></td>
+		
+			<td>Faktura - 20220024 - Grafické práce srpen 2022</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>25.09.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK SHKWTGPJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 24.9.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK SHKWTGPJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 24.9.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>23.09.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK JJWL3G3J62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 23.9.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK JJWL3G3J62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 23.9.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>22.09.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK FWG8QF7J62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 21.9.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK FWG8QF7J62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 21.9.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>21.09.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK 4P7FZGTJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 20.9.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK 4P7FZGTJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 20.9.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>20.09.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK 3GQVNFBJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 19.9.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK 3GQVNFBJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 19.9.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>17.09.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK CQZ2XGTJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 17.9.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK CQZ2XGTJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 17.9.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>15.09.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-40000.0000">
+		-40&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Faktura 2022005 - Správa sociálních sítí -  srpen 2022 (VT)</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>15.09.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="300000.0000">
+		300&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>„Marek Hilšer do Senátu“</td>
+		
+			<td>
+		<div>Převod prostředků na volební kampaň kandidáta na prezidenta - MHS IČO 07157029</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Převod prostředků na volební kampaň kandidáta na prezidenta - MHS IČO 07157029</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>15.09.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK XSHP5FXH62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 14.9.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK XSHP5FXH62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 14.9.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>14.09.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK UEEWYEFJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 14.9.2022, částka  1000.00 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK UEEWYEFJ62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 14.9.2022, částka  1000.00 CZK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>12.09.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="300.0000">
+		300,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>NĚMČÍK JIŘÍ</td>
+		
+			<td>
+		<div>Jiří Němčík, 21.3.1957, Ostrava</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0308</td>
+		
+			<td>5703212240</td>
+		
+			<td>0</td>
+		
+			<td>NĚMČÍK JIŘÍ</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>09.09.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1999.9300">
+		-1&nbsp;999,93&nbsp;CZK
+	</td>
+		
+			<td>Karetní transakce</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Nákup: FACEBK 5CCDZEXH62,  4 Grand Canal Square, fb.me/ads, 2, IRL, dne 9.9.2022, částka  1999.93 CZK</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>5298</td>
+		
+			<td></td>
+		
+			<td>Nákup: FACEBK 5CCDZEXH62,  - propagace článků Facebook</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>08.09.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="500.0000">
+		500,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>HANSKUT JAN</td>
+		
+			<td>
+		<div>Jan Hanskut r.n.1952,Malenovice 128Frýdlant n.Ostravicí 73911.Heslo:Čerstvý vítr do plachet!</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>0</td>
+		
+			<td></td>
+		
+			<td>HANSKUT JAN</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>07.09.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1000.0000">
+		1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>KUCABOVA DANIELA SOV</td>
+		
+			<td>
+		<div>Marek na HRAD</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>0</td>
+		
+			<td></td>
+		
+			<td>KUCABOVA DANIELA SOV</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>06.09.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1000.0000">
+		1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>HAMPLOVÁ HANA</td>
+		
+			<td>
+		<div>Hana Hamplová 28.6. 1951 Hrušov č.53,Brodce nad Jizerou 29473</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>HAMPLOVÁ HANA</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>05.09.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-35000.0000">
+		-35&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Faktura 5 - práce na organizaci kampaně 08</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>05.09.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-2100.5600">
+		-2&nbsp;100,56&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>2210257</td>
+		
+			<td></td>
+		
+			<td>úhrada faktura 2210257 - tiskové materiály pro petiční místa</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>31.08.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-20700.0000">
+		-20&nbsp;700,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>20223086</td>
+		
+			<td></td>
+		
+			<td>Faktura č. 20223086 - úhrada reklamní předměty pro prezidentskou kampaň -</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>31.08.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1000.0000">
+		1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>HANSKUT JAN</td>
+		
+			<td>
+		<div>M.Hilšer presidentem,čerstvý vítr do plachet</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>0</td>
+		
+			<td></td>
+		
+			<td>HANSKUT JAN</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>25.08.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-77742.5000">
+		-77&nbsp;742,50&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>122300</td>
+		
+			<td></td>
+		
+			<td>Faktura 122300 - úprava a redesign webových stránek pro presidentskou volbu</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>24.08.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="2023.0000">
+		2&nbsp;023,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>ČECHOVÁ DOMINIKA</td>
+		
+			<td>
+		<div>Dominika Čechová, 3led80, praha</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td>0</td>
+		
+			<td>0</td>
+		
+			<td>ČECHOVÁ DOMINIKA</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>24.08.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-18400.0000">
+		-18&nbsp;400,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>20220120</td>
+		
+			<td></td>
+		
+			<td>faktura 20220120 - úhrada správa sociálních sítí červenec 2022</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>24.08.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-21000.0000">
+		-21&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>20220022</td>
+		
+			<td></td>
+		
+			<td>faktura 20220022 - úhrada za grafické práce - červenec 2022 JD</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>24.08.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1000.0000">
+		1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>PAVEL MATEJKA</td>
+		
+			<td>
+		<div>PŘEVOD PROSTŘEDKŮ (PAVEL MATĚJKA, 19.5.1978, LIBEREC)</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>PAVEL MATEJKA</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>23.08.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="10000.0000">
+		10&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Veselý, Karel</td>
+		
+			<td>
+		<div>Vesely Karel, Drzim place v kampani</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Vesely Karel, Drzim place v kampani</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>22.08.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="150000.0000">
+		150&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>„Marek Hilšer do Senátu“</td>
+		
+			<td>
+		<div>Převod prostředků pro volební kampaň kandidáta na prezidenta - MHS IČO 07157029</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Převod prostředků pro volební kampaň kandidáta na prezidenta - MHS IČO 07157029</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>16.08.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-40000.0000">
+		-40&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>20220122</td>
+		
+			<td></td>
+		
+			<td>Faktura 20220122 - Komunikační strategie kampaně a soc. sítí</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>16.08.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-50000.0000">
+		-50&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>20220023</td>
+		
+			<td></td>
+		
+			<td>Faktura 20220023 - Zpracování vizuální identity kampaně - grafické práce</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>11.08.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1111.0000">
+		1&nbsp;111,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>LOUN JAKUB</td>
+		
+			<td>
+		<div>Jakub Loun, 27.2.1988, Prerov</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>LOUN JAKUB</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>05.08.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="3000.0000">
+		3&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Svárovská Gabriela</td>
+		
+			<td>
+		<div>Dar na kampaň, Gabriela Svárovská,17.7.1972,Praha 6</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Svárovská Gabriela</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>29.07.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="500.0000">
+		500,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>JAN BRHLÍK</td>
+		
+			<td>
+		<div>Jan Brhlík, 29.3.1973, Melnik</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>JAN BRHLÍK</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>21.07.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-3622.7400">
+		-3&nbsp;622,74&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>22103189</td>
+		
+			<td></td>
+		
+			<td>Faktura 22103189 - stojánky pro petiční místa</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>18.07.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1139.3400">
+		-1&nbsp;139,34&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>2210231</td>
+		
+			<td></td>
+		
+			<td>Faktura - 2210231 - tisk a výroba materiálů pro petiční místa</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>18.07.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-2583.3500">
+		-2&nbsp;583,35&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>1893</td>
+		
+			<td></td>
+		
+			<td>Platba - poštovní obálky</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>13.07.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-153403.8000">
+		-153&nbsp;403,80&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>22006</td>
+		
+			<td></td>
+		
+			<td>Faktura 22006 - úhrada za tiskoviny - volební letáky + petiční pohlednice</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>13.07.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="300000.0000">
+		300&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>„Marek Hilšer do Senátu“</td>
+		
+			<td>
+		<div>Převod prostředků na volební kampaň kandidáta na prezidenta - MHS IČO 07157029</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Převod prostředků na volební kampaň kandidáta na prezidenta - MHS IČO 07157029</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>09.07.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="300.0000">
+		300,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Valenta Pavel</td>
+		
+			<td>
+		<div>Pavel Valenta,1.1.1967,Žďár nad Sázavou 3</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Valenta Pavel</td>
+		
+	</tr>
+			
+		</tbody>
+		
+	</table>
+					
+
+
+				</div>
+				
+			</div>
+		</div>
+		<div class="wrapperFooter" style="height: 69px;">
+			<div class="green_border" style="margin-top: 25px; margin-bottom: 0px;"></div>
+			<div class="grey_footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 gfBox"></div>
+						<div class="col-sm-6 text-right gfBox">
+							<span>©</span> <span>2023</span> <span style="margin-right: 10px">Fio banka</span> <span><a target="_blank" href="https://www.fio.cz/spolecnost_dokumenty_ostatni_pravniProhlaseni.php">Právní prohlášení</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>

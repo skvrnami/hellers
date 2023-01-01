@@ -1,0 +1,2698 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://ib.fio.cz/ib/transparent?a=2702310803&f=01.01.2022&t=01.01.2023 -->
+<html xmlns="https://www.w3.org/1999/xhtml" style="--arc-palette-backgroundExtra:#FDFDFFF2; --arc-palette-maxContrastColor:#212AFBFF; --arc-palette-foregroundSecondary:#8489FBFF; --arc-palette-title:#0A0D4EF6; --arc-palette-background:#E8E9FEF4; --arc-palette-foregroundPrimary:#3139FBFF; --arc-palette-cutoutColor:#ECEDFEFF; --arc-palette-minContrastColor:#ECEDFEFF; --arc-palette-focus:#8D92FBF9; --arc-palette-hover:#D1D3FDF5; --arc-background-gradient-color0:#C8CAFEFF; --arc-background-gradient-color1:#FFE6E6FF; --arc-palette-foregroundTertiary:#ECEDFEFF; --arc-palette-subtitle:#A4A7FBF7;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="./basta_2023-01-01_files/bs_select.min-ver-48D31BCCE684C3E8012F27479890B2BD.css" media="screen, print">
+<script type="text/javascript" src="./basta_2023-01-01_files/jquery-2.1.1.min-ver-E40EC2161FE7993196F23C8A07346306.js"></script>
+<script type="text/javascript" src="./basta_2023-01-01_files/bs_select.min-ver-C1B87DE9A72651219420FD1AD8A917E5.js"></script>
+<script type="text/javascript" src="./basta_2023-01-01_files/wicket-ajax-jquery-ver-6C3579C63E0C4EBFA954D232A7F1B943.js"></script>
+<script type="text/javascript" src="./basta_2023-01-01_files/jquery-ui-1.10.3.min-ver-EC5989164B6776F16D8586D0E8CE0FAC.js"></script>
+<link rel="stylesheet" type="text/css" href="./basta_2023-01-01_files/jquery-ui-1.10.3.min-ver-731ACB920C9707A160221C521B92C583.css" media="screen">
+<script type="text/javascript" src="./basta_2023-01-01_files/DatePicker_cs-ver-B53E393FD0791540160DFB834FE263AD.js"></script>
+<script type="text/javascript" src="./basta_2023-01-01_files/jquery.quicksearch-ver-C3C7D26BA116FACC98845C56ECB13183.js"></script>
+
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" sizes="16x16" type="image/x-icon" href="https://ib.fio.cz/ib/fio/resource/cz.fio.ib2.common.wicket.web.layout.image.FioImage/png/favicon-ver-BED52CBBA61C3C2EFBCD2A3F722B3146.ico">
+	<title>Internetové bankovnictví | Fio banka</title>
+	
+
+<link rel="stylesheet" type="text/css" href="./basta_2023-01-01_files/bootstrap_331.min-ver-3AB3438F85AD9F9E27E1AF1FACF0A9C4.css" media="screen, print">
+<script type="text/javascript" src="./basta_2023-01-01_files/bootstrap_331.min-ver-2616D3564578D8F845813483352802A9.js"></script>
+<link rel="stylesheet" type="text/css" href="./basta_2023-01-01_files/fontawesome_4.min-ver-269550530CC127B6AA5A35925A7DE6CE.css" media="screen">
+<script type="text/javascript" src="./basta_2023-01-01_files/defaultJsFunctions-ver-9E9CA8D2CC0C8564BE7215594E80225E.js"></script>
+<script type="text/javascript" src="./basta_2023-01-01_files/defaultLocalizedJsFunctions-ver-B7988DA714EE0C935177B500A92B1537.js"></script>
+<script type="text/javascript" src="./basta_2023-01-01_files/typeahead.min-ver-D223EF84ECB16144225340B5E227D67A.js"></script>
+<link rel="stylesheet" type="text/css" href="./basta_2023-01-01_files/style-ver-3E1DEA72E728B4FA6F9374384DD8178A.css" media="screen">
+<link rel="stylesheet" type="text/css" href="./basta_2023-01-01_files/print-ver-98E7EA0529EA6D60F27CD68E8A462E77.css" media="print">
+<meta name="description" content="Přihlášení do internetového bankovnictví Fio banky. Kromě plateb si zde můžete založit i další účty, požádat o půjčku, kontokorent a další služby.">
+<script type="text/javascript">
+/*<![CDATA[*/
+Wicket.Event.add(window, "load", function(event) { 
+$("#ide459e859b37add891").nextAll(".bootstrap-select").first().remove();
+$("#ide459e859b37add891").selectpicker({dropupAuto: false, showSubtext: true});;
+$('#idcecec54f71a9324f2').datepicker({minDate: -365,maxDate: 0}); $('#id67a90cb4a135bfe93').click(function(){$(this).closest('.input-group').children('.form-control').datepicker('show');});;
+$('#idd7d98e84373dff724').datepicker({minDate: -365,maxDate: 0}); $('#id944b925d64e68eed5').click(function(){$(this).closest('.input-group').children('.form-control').datepicker('show');});;
+(function() {
+
+	var oldValFrom = null;
+	var oldValTo = null;
+	
+	function checkRadioRychlaVolba() {
+		if ($("#idb949597385d227896 .radioTYDEN").is(':checked')) {
+			$("#idb949597385d227896 .datepickerFrom").datepicker("setDate", "-7d");
+			$("#idb949597385d227896 .datepickerTo").datepicker("setDate", "0");
+		}
+
+		if ($("#idb949597385d227896 .radioMESIC").is(':checked')) {
+			$("#idb949597385d227896 .datepickerFrom").datepicker("setDate", "-1m");
+			$("#idb949597385d227896 .datepickerTo").datepicker("setDate", "0");
+		}
+
+		if ($("#idb949597385d227896 .radioVLASTNI").is(':checked')) {
+			$("#idb949597385d227896 .datepickerFrom").datepicker('enable');
+			$("#idb949597385d227896 .datepickerTo").datepicker('enable');
+		}
+		
+		oldValFrom = $("#idb949597385d227896 .datepickerFrom").datepicker({ dateFormat: 'yy-mm-dd' }).val();
+		oldValTo = $("#idb949597385d227896 .datepickerTo").datepicker({ dateFormat: 'yy-mm-dd' }).val();
+	}
+	;
+
+	checkRadioRychlaVolba();
+	$("#idb949597385d227896 .radios").change(function() {
+		checkRadioRychlaVolba();
+	});
+
+	$("#idb949597385d227896 .datepickerFrom").on('change keypress paste focus textInput input', function() {
+		var val = ($("#idb949597385d227896 .datepickerFrom").datepicker({dateFormat : 'yy-mm-dd'}).val());
+		if (val !== oldValFrom) {
+			oldValFrom = val;
+			$("#idb949597385d227896 .radioVLASTNI").prop("checked", true);
+		}
+	});
+	
+	$("#idb949597385d227896 .datepickerTo").on('change keypress paste focus textInput input', function() {
+		var val = ($("#idb949597385d227896 .datepickerTo").datepicker({ dateFormat: 'yy-mm-dd' }).val());        
+		if (val != oldValTo) {
+        	oldValFrom = val;
+        	$("#idb949597385d227896 .radioVLASTNI").prop("checked", true);
+        }
+	});
+})();;
+(function() {
+
+	$("#id54833ff5a99d47947").focus(function() {
+		$(this).prev(".input-group-addon").css("border-color", "#66AFE9");
+	});
+
+	$("#id54833ff5a99d47947").focusout(function() {
+		$(this).prev(".input-group-addon").css("border-color", "#CCCCCC");
+	});
+	
+	var qs = $("#id54833ff5a99d47947").quicksearch('#id4008b0112afb2c238 tbody tr:not(".sumacniRadek")', {});
+	
+	function showHideRemove(){
+		 if($.trim($("#id54833ff5a99d47947").val()).length) { // mame text
+			 $("#id54833ff5a99d47947").parent().find(".deleteText").show();
+	     }
+		 else{
+			 $("#id54833ff5a99d47947").parent().find(".deleteText").hide();
+		 }
+	}
+	showHideRemove();
+	$("#id54833ff5a99d47947").keyup(function(event) {
+		showHideRemove();
+    });
+	$("#id54833ff5a99d47947").parent().find(".deleteText").click(function(){
+		$("#id54833ff5a99d47947").val("");
+		showHideRemove();
+		$("#id54833ff5a99d47947").focus();
+		qs.reset();
+    });
+
+	
+	
+})();
+;
+setMinimalContentSize();;
+;});
+/*]]>*/
+</script>
+</head>
+<body>
+	
+	<div class="wrapperPage wrapperPageTrans">
+		<div class="wrapperHeader">
+			<div class="green_border"></div>
+			<div class="container" style="margin-bottom: 20px">
+				<div class="row">
+					<div class="col-md-4 col-xs-6" style="line-height: 50px;">
+						<img class="logo_header img-responsive" src="./basta_2023-01-01_files/logo_fio-ver-894B2A39F77CABA34D70A4AC4C0FE0B6.png">
+					</div>
+					<div class="col-md-8 nav_header">
+						<div>
+	<form class="form-inline pull-right" id="id74cda4debd9572a69" method="post" action="https://ib.fio.cz/ib/transparent?-1.-languageSelector-form&amp;a=2702310803&amp;f=01.01.2022&amp;t=01.01.2023"><div id="id74cda4debd9572a69_hf_0" hidden="" class="hidden-fields"></div>
+		<div class="form-group">
+			<select class="form-control pull-right" name="languageDropDown" id="ide459e859b37add891" onchange="this.form.submit()" style="display: none;">
+<option selected="selected" value="CZECH" data-content="&lt;span&gt;&lt;img src=&#39;./fio/resource/cz.fio.ib2.common.wicket.web.layout.image.FioImage/png/VlajkaCzMala-ver-425A2FE80A90297180F0DCC77B3F66B6.png&#39;&gt; Česky&lt;/span&gt;">Česky</option>
+<option value="SLOVAK" data-content="&lt;span&gt;&lt;img src=&#39;./fio/resource/cz.fio.ib2.common.wicket.web.layout.image.FioImage/png/VlajkaSkMala-ver-54AA18CD9834A48A7616BB29EA79F102.png&#39;&gt; Slovensky&lt;/span&gt;">Slovensky</option>
+<option value="ENGLISH" data-content="&lt;span&gt;&lt;img src=&#39;./fio/resource/cz.fio.ib2.common.wicket.web.layout.image.FioImage/png/VlajkaGbMala-ver-E4896565595FC22E344FD619C0ED15BB.png&#39;&gt; English&lt;/span&gt;">English</option>
+</select><div class="btn-group bootstrap-select form-control pull-right"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" data-id="ide459e859b37add891"><span class="filter-option pull-left"><span><img src="./basta_2023-01-01_files/VlajkaCzMala-ver-425A2FE80A90297180F0DCC77B3F66B6.png">&nbsp;Česky</span></span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li data-original-index="0" class="selected"><a tabindex="0" class="" data-normalized-text="&lt;span&gt;&lt;img src=&#39;./fio/resource/cz.fio.ib2.common.wicket.web.layout.image.FioImage/png/VlajkaCzMala-ver-425A2FE80A90297180F0DCC77B3F66B6.png&#39;&gt; Česky&lt;/span&gt;"><span><img src="./basta_2023-01-01_files/VlajkaCzMala-ver-425A2FE80A90297180F0DCC77B3F66B6.png">&nbsp;Česky</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-normalized-text="&lt;span&gt;&lt;img src=&#39;./fio/resource/cz.fio.ib2.common.wicket.web.layout.image.FioImage/png/VlajkaSkMala-ver-54AA18CD9834A48A7616BB29EA79F102.png&#39;&gt; Slovensky&lt;/span&gt;"><span><img src="./basta_2023-01-01_files/VlajkaSkMala-ver-54AA18CD9834A48A7616BB29EA79F102.png">&nbsp;Slovensky</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-normalized-text="&lt;span&gt;&lt;img src=&#39;./fio/resource/cz.fio.ib2.common.wicket.web.layout.image.FioImage/png/VlajkaGbMala-ver-E4896565595FC22E344FD619C0ED15BB.png&#39;&gt; English&lt;/span&gt;"><span><img src="./basta_2023-01-01_files/VlajkaGbMala-ver-E4896565595FC22E344FD619C0ED15BB.png">&nbsp;English</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>
+		</div>
+	</form>
+</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container wrapperBody" style="padding-bottom: 69px">
+			<div class="row">
+				<div class="col-lg-12 content" style="min-height: 400px;">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="page-header">
+								<h1 style="display: block; text-align: center;">
+									Pohyby na transparentním účtu
+								</h1>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							
+								<div>
+									<strong>Číslo účtu:</strong>
+									
+    2702310803 / 2010
+    
+
+								</div>
+							
+							<div>
+								<strong>Majitel účtu:</strong>
+								Bašta, Jaroslav
+							</div>
+							<div>
+								<strong>Název účtu:</strong>
+								Bašta Jaroslav Volby prezidenta republiky 2023
+							</div>
+							
+						</div>
+						<div class="col-md-6">
+							<div>
+		<div class="input-group">
+			<span class="input-group-addon inputAddonPre">
+				<i class="fa fa-search"></i>
+				<i class="fa fa-times deleteText" style="display: none;"></i>
+			</span> 
+			<input style="border-left: medium none;" type="text" autocomplete="off" class="form-control searchInput" id="id54833ff5a99d47947" placeholder="Co hledáte?">
+		</div>
+	</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-9 pohybySum">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Stav k: <span>01.01.2022</span></th>
+										<th>Stav k: <span>01.01.2023</span></th>
+										<th>Suma příjmů</th>
+										<th>Suma výdajů</th>
+										<th>Suma celkem</th>
+										<th>Běžný zůstatek</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+		0,00&nbsp;CZK
+	</td>
+										<td>
+		104&nbsp;298,69&nbsp;CZK
+	</td>
+										<td>
+		12&nbsp;848&nbsp;230,11&nbsp;CZK
+	</td>
+										<td class="negative">
+		-12&nbsp;743&nbsp;931,42&nbsp;CZK
+	</td>
+										<td>
+		104&nbsp;298,69&nbsp;CZK
+	</td>
+										<td>
+		104&nbsp;298,69&nbsp;CZK
+	</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div style="position: relative; top: -8px;" class="col-md-12">
+									<a class="pull-right btn btn-transparent hidden-print" href="https://ib.fio.cz/ib/transparent?a=2702310803&amp;f=01.01.2022&amp;t=01.01.2023#" onclick="window.print();"><i class="fa fa-print fa-lg"></i>
+									</a>
+								</div>
+							</div>
+							<div class="row">
+								<div style="position: relative; top: -6px;" class="col-md-12 hidden-print">
+									<div class="btn-group dropdownCloseBox pull-right">
+										<button class="btn btn-default dropdownCloseBtn" type="button">
+											<span>01.01.2022</span>&nbsp;-&nbsp;<span>01.01.2023</span>
+											<div class="caret"></div>
+										</button>
+										<div class="dropdown-menu pohybySelectDate dropdownClose">
+											<form class="form-inline" id="idb949597385d227896" method="post" action="https://ib.fio.cz/ib/transparent?-1.-dateForm&amp;a=2702310803&amp;f=01.01.2022&amp;t=01.01.2023"><div id="idb949597385d227896_hf_0" hidden="" class="hidden-fields"></div>
+												<div class="row">
+													<div class="col-md-12 text-center">
+														<div class="radio">
+															<label><input type="radio" name="rychlaVolba" class="radios radioMESIC"> <span>poslední měsíc</span></label>
+														</div>
+														<div class="radio">
+															<label><input type="radio" name="rychlaVolba" class="radios radioTYDEN"> <span>poslední týden</span></label>
+														</div>
+														<div class="radio">
+															<label><input type="radio" name="rychlaVolba" checked="checked" class="radios radioVLASTNI"> <span>vlastní</span></label>
+														</div>
+
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12">
+														<div style="background: none repeat scroll 0% 0% rgb(255, 255, 255); padding: 10px;">
+															<div class="row">
+																<div class="col-md-6">
+																	<div class="form-group">
+																		<label for="idcecec54f71a9324f2">Od</label>
+																		<div class="input-group">
+		<input type="text" class="form-control input-sm datepicker datepickerFrom hasDatepicker" value="01.01.2022" name="datumOd:inputField" id="idcecec54f71a9324f2">
+		<span class="input-group-addon" style="cursor: pointer" id="id67a90cb4a135bfe93"> <i class="fa fa-calendar"></i>
+		</span>
+	</div>
+																	</div>
+																</div>
+																<div class="col-md-6">
+																	<div class="form-group">
+																		<label for="idd7d98e84373dff724">Do</label>
+																		<div class="input-group">
+		<input type="text" class="form-control input-sm datepicker datepickerTo hasDatepicker" value="01.01.2023" name="datumDo:inputField" id="idd7d98e84373dff724">
+		<span class="input-group-addon" style="cursor: pointer" id="id944b925d64e68eed5"> <i class="fa fa-calendar"></i>
+		</span>
+	</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<hr>
+												<div class="row">
+													<div class="col-md-12">
+														<button type="submit" class="btn greenBtn btn-sm pull-left">
+															Zobrazit
+														</button>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr>
+					
+					
+					<table class="table" id="id4008b0112afb2c238">
+		<thead>
+			<tr>
+		
+			<th>Datum</th>
+		
+			<th class="text-right">Částka</th>
+		
+			<th>Typ</th>
+		
+			<th>Název protiúčtu</th>
+		
+			<th>Zpráva pro příjemce</th>
+		
+			<th>KS</th>
+		
+			<th>VS</th>
+		
+			<th>SS</th>
+		
+			<th>Poznámka</th>
+		
+	</tr>
+		</thead>
+		<tbody>
+			
+				<tr>
+		
+			<td>31.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-10.0000">
+		-10,00&nbsp;CZK
+	</td>
+		
+			<td>Poplatek - platební karta</td>
+		
+			<td></td>
+		
+			<td>
+		<div>poplatek za pojištění</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>4231</td>
+		
+			<td></td>
+		
+			<td>poplatek za pojištění</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>30.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1000.0000">
+		1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>HRUBÝ MIROSLAV</td>
+		
+			<td>
+		<div>dar pro prezidentskou kampaň</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>HRUBÝ MIROSLAV</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>29.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1000.0000">
+		-1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Poplatek - platební karta</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Založení expres karty, číslo bylo přiděleno</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>4231</td>
+		
+			<td></td>
+		
+			<td>Založení expres karty, číslo bylo přiděleno</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>29.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="333.0000">
+		333,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>SIMEK VOJTECH</td>
+		
+			<td>
+		<div>Dar - od: Vojtěch Šimek, *1.9.1976,bytem: Rejta 951, T. Sviny 37401</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>0</td>
+		
+			<td></td>
+		
+			<td>SIMEK VOJTECH</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>22.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1200.0000">
+		-1&nbsp;200,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Zajištění kartiček s fotografiemi - prezidentská kampaň Jaroslava Bašty</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04122022</td>
+		
+			<td></td>
+		
+			<td>Zajištění kartiček s fotografiemi - prezidentská kampaň Jaroslava Bašty - Ivana Říhová Jarkovská</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>22.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-4000.0000">
+		-4&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>grafické práce, pozvánky Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>01122022</td>
+		
+			<td></td>
+		
+			<td>Olga Nema grafické práce, pozvánky - prezidentská kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>22.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-7000.0000">
+		-7&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Doprava - vozík s bannerem - prezidentská kampaň Jaroslava Bašty</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>p. Miroslav Staněk Doprava - vozík s bannerem - prezidentská kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>20.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="7000.0000">
+		7&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Ing.Votoupal Petr</td>
+		
+			<td>
+		<div>dar od Petr Votoupal</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Ing.Votoupal Petr</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>17.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1488.0000">
+		-1&nbsp;488,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>vrácení daru</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>vrácení daru Jan Panocha</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>17.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1355953.2300">
+		-1&nbsp;355&nbsp;953,23&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>pronájem rekl. panelů pro prezidentskou kampaň Jaroslava Bašty (100 ploch) prosinec 2022 (PS18136406/JV)</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>BigMedia, spol. s r.o. pronájem reklamních panelů pro prezidentskou kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>17.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-3993.0000">
+		-3&nbsp;993,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td></td>
+		
+			<td>
+		<div>SP-Solutions s.r.o. - zajištění bezpečnosti - prezidentská kampaň Jaroslava Bašty</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0308</td>
+		
+			<td>2022019</td>
+		
+			<td></td>
+		
+			<td>SP-Solutions s.r.o. - zajištění bezpečnosti - prezidentská kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>17.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-195885.0000">
+		-195&nbsp;885,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>prezidentská kampaň Jaroslava Bašty -  webová prezentace, křest knihy, IT podpora, produkce atd.</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>20223011</td>
+		
+			<td></td>
+		
+			<td>Cecílie Jílková prezidentská kampaň Jaroslava Bašty - webová prezentace, křest knihy, IT podpora, produkce</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>17.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-31363.2000">
+		-31&nbsp;363,20&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>banner - zaměření, tisk, instalace atd. pro prezidentskou kampaň Jaroslava Bašty</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0008</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>D &amp; S Design Prague s.r.o. reklamní banner a související práce pro prezidentskou kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>17.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-878084.9000">
+		-878&nbsp;084,90&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>pronájem rekl. panelů pro prezidentskou kampaň Jaroslava Bašty (69 ploch) prosinec 2022 (PL18137138/JV)</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>BigMedia, spol. s r.o. pronájem reklamních ploch pro prezidentskou kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>17.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-100000.0000">
+		-100&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>prezidentská kampaň Jaroslava Bašty - videoklip postprodukce</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0308</td>
+		
+			<td>20220071</td>
+		
+			<td></td>
+		
+			<td>DVORAK FILM - MIROSLAV DVOŘÁK prezidentská kampaň Jaroslava Bašty - videoklip postprodukce</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>15.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1355953.2300">
+		1&nbsp;355&nbsp;953,23&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>15.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="3993.0000">
+		3&nbsp;993,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>15.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="195885.0000">
+		195&nbsp;885,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>15.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="31363.2000">
+		31&nbsp;363,20&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>15.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="100000.0000">
+		100&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>15.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="878084.9000">
+		878&nbsp;084,90&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>14.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-12100.0000">
+		-12&nbsp;100,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Jaroslav Bašta prezidentské volby - inzerce Deník Hradec Králové</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>2217026565</td>
+		
+			<td></td>
+		
+			<td>Deník - inzerce Jaroslav Bašta prezidentské volby - Hradec Králové</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>14.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-405785.0000">
+		-405&nbsp;785,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>UNIPRESS spol. s r.o., letáky A5 - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>3030016359</td>
+		
+			<td></td>
+		
+			<td>UNIPRESS spol. s r.o., letáky A5 - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>14.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-178922.7000">
+		-178&nbsp;922,70&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>výroba OOH plakátů pro prezidentskou kampaň Jaroslava Bašty</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0008</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>D &amp; S Design Prague s.r.o. výroba OOH plakátů pro prezidentskou kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>12.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1488.0000">
+		1&nbsp;488,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>PANOCHA JAN</td>
+		
+			<td>
+		<div>dar od Jan Panocha</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td>0</td>
+		
+			<td>0</td>
+		
+			<td>PANOCHA JAN</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>12.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-100000.0000">
+		-100&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>prezidentská kampaň Jaroslava Bašty - videoklip realizace</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0308</td>
+		
+			<td>20220070</td>
+		
+			<td></td>
+		
+			<td>DVORAK FILM - MIROSLAV DVOŘÁK prezidentská kampaň Jaroslava Bašty - videoklip realizace</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>12.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-117810.7000">
+		-117&nbsp;810,70&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>prezidentská kampaň Jaroslava Bašty - výroba knihy, pronájem techniky</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>20221611</td>
+		
+			<td></td>
+		
+			<td>Cecílie Jílková prezidentská kampaň Jaroslava Bašty - výroba knihy, pronájem techniky</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>12.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-6050.0000">
+		-6&nbsp;050,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Jaroslav Bašta prezidentské volby - inzerce Deník Hradec Králové</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>2217026565</td>
+		
+			<td></td>
+		
+			<td>Deník - inzerce Jaroslav Bašta prezidentské volby - Hradec Králové</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>09.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="100000.0000">
+		100&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>BAŠTA JAROSLAV</td>
+		
+			<td>
+		<div>JAROSLA BAŠTA</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td>480515</td>
+		
+			<td>0</td>
+		
+			<td>BAŠTA JAROSLAV</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>08.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1300.0000">
+		1&nbsp;300,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Bělota, Ladislav</td>
+		
+			<td>
+		<div>Podpora Jaroslavu Baštovi - Ladislav Bělota, IČO 10572058, sídlo M. Knesla 4020, Zlín</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Podpora Jaroslavu Baštovi - Ladislav Bělota, IČO 10572058, sídlo M. Knesla 4020, Zlín</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>07.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1000.0000">
+		1&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Strakoň Kamil</td>
+		
+			<td>
+		<div>Bašta Jaroslav.Volby prezidenta republiky 2023</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Strakoň Kamil</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>07.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="405785.0000">
+		405&nbsp;785,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>07.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="178922.7000">
+		178&nbsp;922,70&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>07.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="117810.7000">
+		117&nbsp;810,70&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>07.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="100000.0000">
+		100&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>07.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-5005.0000">
+		-5&nbsp;005,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>3122022JB Jaroslav Bašta - prezidentské volby - pronájem sálu a občerstvení</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0308</td>
+		
+			<td>2022015</td>
+		
+			<td></td>
+		
+			<td>Jaroslav Bašta - prezidentské volby - pronájem sálu The Factory a občerstvení Pardubice</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>05.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-6050.0000">
+		-6&nbsp;050,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Jaroslav Bašta prezidentské volby - inzerce Deník</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>2217026267</td>
+		
+			<td></td>
+		
+			<td>Deník - inzerce Jaroslav Bašta prezidentské volby</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>02.12.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="400.0000">
+		400,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá příchozí platba</td>
+		
+			<td>Leška Hvězdoslav</td>
+		
+			<td>
+		<div>Hvezdoslav Leska</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Leška Hvězdoslav</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>02.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-127264.0000">
+		-127&nbsp;264,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>inzerce Metro (28.11.) a 5plus2 (2.12.) prezidentská kampaň Jaroslava Bašty</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0308</td>
+		
+			<td>2122029662</td>
+		
+			<td></td>
+		
+			<td>MAFRA, a.s. inzerce Metro a 5plus2 prezidentská kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>02.12.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-150000.0000">
+		-150&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>prezidentská kampaň Jaroslava Bašty - videoklip (scénář, režie, technika)</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0308</td>
+		
+			<td>20220069</td>
+		
+			<td></td>
+		
+			<td>DVORAK FILM - MIROSLAV DVOŘÁK prezidentská kampaň Jaroslava Bašty - videoklip (scénář, režie, technika)</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>30.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="150000.0000">
+		150&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>27.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-10000.0000">
+		-10&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>FRIVA s.r.o.správa webových stránek</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0008</td>
+		
+			<td>202223</td>
+		
+			<td></td>
+		
+			<td>FRIVA spol. s.r.o. správa webových stránek www.jaroslavbastaprezident.cz</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>27.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1872314.6000">
+		-1&nbsp;872&nbsp;314,60&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>pronájem rekl. panelů pro prezidentskou kampaň Jaroslava Bašty (104 ploch) leden 2023 (PS18136407/JV)</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>BigMedia, spol. s r.o. pronájem reklamních ploch pro prezidentskou kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>24.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="500.0000">
+		500,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Chvojka, Petr</td>
+		
+			<td>
+		<div>Petr Chvojka</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Petr Chvojka</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>23.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1872314.6000">
+		1&nbsp;872&nbsp;314,60&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>10.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-2021182.3300">
+		-2&nbsp;021&nbsp;182,33&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Ostatní zálohy - poštovní služby 21 - roznáška inf. materiálů - Prezidentské volby 2023 pro prezidentskou kampaň Jaroslava Bašty</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0308</td>
+		
+			<td>2022090775</td>
+		
+			<td></td>
+		
+			<td>Česká pošta, s.p. - roznáška inf. materiálů pro prezidentskou kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>10.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1355953.2000">
+		-1&nbsp;355&nbsp;953,20&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>pronájem rekl. panelů pro prezidentskou kampaň Jaroslava Bašty (100 ploch) prosinec 2022 (PS18136406/JV)</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>BigMedia, spol. s r.o. pronájem reklamních ploch pro prezidentskou kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>09.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="1355953.2000">
+		1&nbsp;355&nbsp;953,20&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>09.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="2021182.3300">
+		2&nbsp;021&nbsp;182,33&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>08.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="100000.0000">
+		100&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>BAŠTA JAROSLAV</td>
+		
+			<td>
+		<div>Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td>480515</td>
+		
+			<td>0</td>
+		
+			<td>BAŠTA JAROSLAV</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>04.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1200.0000">
+		-1&nbsp;200,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Zajištění kartiček s fotografiemi - prezidentská kampaň Jaroslava Bašty</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Zajištění kartiček s fotografiemi - prezidentská kampaň Jaroslava Bašty - Ivana Říhová Jarkovská</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>04.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-43560.0000">
+		-43&nbsp;560,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>2 bannery s oky 9,6 x 8,2 pro prezidentskou kampaň Jaroslava Bašty listopad 2022</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>BigMedia, spol. s r.o. reklamní materiály (bannery) pro prezidentskou kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>04.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-2468732.7500">
+		-2&nbsp;468&nbsp;732,75&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>pronájem reklamních panelů pro prezidentskou kampaň Jaroslava Bašty listopad 2022 (PS18136471/JV) 32 ploch</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>BigMedia, spol. s r.o. pronájem reklamních panelů pro prezidentskou kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>04.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-28677.0000">
+		-28&nbsp;677,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>focení pro prezidentskou kampaň Jaroslava Bašty</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>D &amp; S Design Prague s.r.o. focení pro prezidentskou kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>04.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="28677.0000">
+		28&nbsp;677,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>04.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-233009.7000">
+		-233&nbsp;009,70&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>pronájem reklamních panelů pro prezidentskou kampaň Jaroslava Bašty listopad 2022 (PL18136430/JV) LM 11</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>BigMedia, spol. s r.o. pronájem reklamních panelů pro prezidentskou kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>04.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-15693.7000">
+		-15&nbsp;693,70&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>leták pro prezidentskou kampaň Jaroslava Bašty</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>D &amp; S Design Prague s.r.o. leták (graf. a DTP příprava) pro prezidentskou kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>04.11.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-93003.1000">
+		-93&nbsp;003,10&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>výroba OOH plakátů pro prezidentskou kampaň Jaroslava Bašty</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>D &amp; S Design Prague s.r.o. výroba OOH plakátů pro prezidentskou kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>02.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="233009.7000">
+		233&nbsp;009,70&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>02.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="43560.0000">
+		43&nbsp;560,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>02.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="2468732.7500">
+		2&nbsp;468&nbsp;732,75&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>02.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="15693.7000">
+		15&nbsp;693,70&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>02.11.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="93003.1000">
+		93&nbsp;003,10&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>24.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-885285.0000">
+		-885&nbsp;285,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>UNIPRESS spol. s r.o., záloha na tisk letáků - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>3020000063</td>
+		
+			<td></td>
+		
+			<td>UNIPRESS spol. s r.o., záloha na tisk letáků - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>21.10.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="885285.0000">
+		885&nbsp;285,00&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td>Svoboda a přímá demokracie (SPD)</td>
+		
+			<td>
+		<div>Dar - prezidentská kampaň Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>04134940</td>
+		
+			<td></td>
+		
+			<td>Dar - prezidentská kampaň Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>06.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-50.0000">
+		-50,00&nbsp;CZK
+	</td>
+		
+			<td>Poplatek</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Fotografie a logo Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Fotografie a logo Jaroslav Bašta</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>06.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-4000.0000">
+		-4&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Fotografie a logo Jaroslav Bašta</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>01102022</td>
+		
+			<td></td>
+		
+			<td>Olga Nema Fotografie a logo - prezidentská kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>06.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-50.0000">
+		-50,00&nbsp;CZK
+	</td>
+		
+			<td>Poplatek</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Zakoupení webhostingu Jaroslav Bašt</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Zakoupení webhostingu Jaroslav Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>06.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-998.9800">
+		-998,98&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Zakoupení webhostingu Jaroslav Bašt</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>08102022</td>
+		
+			<td></td>
+		
+			<td>Vladimíra Bondarenková Zakoupení webhostingu - prezidentská kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>06.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-50.0000">
+		-50,00&nbsp;CZK
+	</td>
+		
+			<td>Poplatek</td>
+		
+			<td></td>
+		
+			<td>
+		<div>FRIVA s.r.o. Spravování web stránek</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>FRIVA s.r.o. Spravování web stránek</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>06.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-5000.0000">
+		-5&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>FRIVA s.r.o. Spravování web stránek</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0008</td>
+		
+			<td>202218</td>
+		
+			<td></td>
+		
+			<td>FRIVA spol. s.r.o. Spravování webových stránek v měsíci 10/2022 - prezidentská kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>06.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-50.0000">
+		-50,00&nbsp;CZK
+	</td>
+		
+			<td>Poplatek</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Zakoupení 5x domén -Jaroslava Bašty</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Zakoupení 5x domén -Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>06.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-1056.3300">
+		-1&nbsp;056,33&nbsp;CZK
+	</td>
+		
+			<td>Platba převodem uvnitř banky</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Zakoupení 5x domén -Jaroslava Bašty</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>07102022</td>
+		
+			<td></td>
+		
+			<td>Vladimíra Bondarenková Zakoupení pěti domén prezidenstká kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>06.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-50.0000">
+		-50,00&nbsp;CZK
+	</td>
+		
+			<td>Poplatek</td>
+		
+			<td></td>
+		
+			<td>
+		<div>FRIVA s.r.o.Tvorba webových stránek</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>FRIVA s.r.o.Tvorba webových stránek</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>06.10.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-10000.0000">
+		-10&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>FRIVA s.r.o.Tvorba webových stránek</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0008</td>
+		
+			<td>202217</td>
+		
+			<td></td>
+		
+			<td>FRIVA spol. s.r.o. Tvorba webových stránek www.jaroslavbastaprezident.cz</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>23.09.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-50.0000">
+		-50,00&nbsp;CZK
+	</td>
+		
+			<td>Poplatek</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Filip Mruzek</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td></td>
+		
+			<td>Filip Mruzek- Zprovoznění domén, webhostingu, databází - prezidentská kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>23.09.2022</td>
+		
+			<td class="negative text-right amount amount_value" data-value="-5000.0000">
+		-5&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Okamžitá odchozí platba</td>
+		
+			<td></td>
+		
+			<td>
+		<div>Filip Mruzek</div>
+		
+		
+		
+		
+	</td>
+		
+			<td></td>
+		
+			<td>2022065</td>
+		
+			<td></td>
+		
+			<td>Filip Mruzek Zprovoznění domén, webhostingu, databází - prezidentská kampaň Jaroslava Bašty</td>
+		
+	</tr>
+			
+				<tr>
+		
+			<td>16.09.2022</td>
+		
+			<td class="text-right amount amount_value" data-value="100000.0000">
+		100&nbsp;000,00&nbsp;CZK
+	</td>
+		
+			<td>Bezhotovostní příjem</td>
+		
+			<td>BAŠTA JAROSLAV</td>
+		
+			<td>
+		<div>JAROSLAV BAŠTA</div>
+		
+		
+		
+		
+	</td>
+		
+			<td>0000</td>
+		
+			<td>480515</td>
+		
+			<td>0</td>
+		
+			<td>BAŠTA JAROSLAV</td>
+		
+	</tr>
+			
+		</tbody>
+		
+	</table>
+					
+
+
+				</div>
+				
+			</div>
+		</div>
+		<div class="wrapperFooter" style="height: 69px;">
+			<div class="green_border" style="margin-top: 25px; margin-bottom: 0px;"></div>
+			<div class="grey_footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 gfBox"></div>
+						<div class="col-sm-6 text-right gfBox">
+							<span>©</span> <span>2023</span> <span style="margin-right: 10px">Fio banka</span> <span><a target="_blank" href="https://www.fio.cz/spolecnost_dokumenty_ostatni_pravniProhlaseni.php">Právní prohlášení</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>
