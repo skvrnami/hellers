@@ -1,0 +1,1 @@
+window.PuiTheme=window.PuiTheme||{};(function(a){var b=a.PuiEventsListener;if(typeof b!=="undefined"){b.initWidget()}})(window.PuiTheme);

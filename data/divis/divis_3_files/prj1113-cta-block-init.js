@@ -1,0 +1,1 @@
+window.PuiTheme=window.PuiTheme||{};(function(a){a.EventDomReady.subscribe("CtaBlockHtml",{},function(f,c){var d=a.CtaBlockHtml;if(typeof d!=="undefined"){var b={};d.initWidget(b,c)}})})(window.PuiTheme);

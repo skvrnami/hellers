@@ -1,0 +1,1 @@
+window.PuiTheme=window.PuiTheme||{};(function(a,b){a.PuiRadio=function(c){this._init(c)};b.extend(a.PuiRadio.prototype,{_defaults:{selector:".pdp-input-element input[type=radio]",radioWrapperClass:"pdp-radio"},_init:function(c){var d=this;d.options=b.extend({},d._defaults,c||{});b(d.options.selector).puiCheckRadioDecorator(c)}})})(window.PuiTheme,jQuery);

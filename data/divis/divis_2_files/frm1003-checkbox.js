@@ -1,0 +1,1 @@
+window.PuiTheme=window.PuiTheme||{};(function(a,b){a.PuiCheckbox=function(c){this._init(c)};b.extend(a.PuiCheckbox.prototype,{_defaults:{selector:".pdp-input-element input[type=checkbox]",checkboxWrapperClass:"pdp-checkbox"},_init:function(c){var d=this;d.options=b.extend({},d._defaults,c||{});b(d.options.selector).puiCheckRadioDecorator()}})})(window.PuiTheme,jQuery);
